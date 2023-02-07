@@ -1,3 +1,4 @@
+/* universal styling */
 body {
     font-family:Arial, Helvetica, sans-serif;
     color: #000;
@@ -7,42 +8,53 @@ body {
 h1 {
     margin: 50px;
     color: #000;
+}
+
+/* Home Page styling*/
+#home-board {
+    height: 575px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+    border: 10px solid red;
   }
 
-  .dropbutton {
+/* Drop button styling */ 
+.dropbutton {
     background-color: #000;
     color: #fff;
     border: none;
-  }
+}
 
-  .dropdown {
+.dropdown {
     position: relative;
     display: block;
     float: right;
-  }
+}
 
-  .drop-content {
+.drop-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
-  }
+    
+}
 
-  .drop-content a {
+.drop-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
 .drop-content a:hover {
     background-color: grey;
 }
-
-.dropdown:hover {
-    display: inline-block;
+.dropdown:hover .drop-content {
+    display: block;
 }
-
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbutton {
     background-color: green;
 }
