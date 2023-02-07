@@ -30,7 +30,7 @@ window.onload = function() {
   }
 
 /**
- * Function to shuffle the cardList
+ * Function to shuffle the cardList and create pairs by duplicating the array
  */ 
 function shuffleCards() { 
     pairSet = cardList.concat(cardList); //get two of each of the cards (create pairs)
@@ -52,7 +52,7 @@ function shuffleCards() {
  */
 function startGame() {
     //arrange the board in 4 x5 for the iridium expert level
-    for (let r =0; r < rows; r++) {
+    for (let r = 0; r < rows; r++) {
         let row = [];
         for (let c= 0; c < columns; c++) {
             let cardImg = pairSet.pop();
@@ -60,6 +60,9 @@ function startGame() {
             let card = document.createElement("img");
             card.id =r.toString() + "-" + c.toString();
             card.src = cardImg + ".jpg"
+            card.classList.add("card");
+            card.addEventListener("click", selectCard);
+            document.getElementById("board").append(card);
         }
     }
 
