@@ -16,9 +16,9 @@ h1 {
   }
 
   .dropdown {
-    position: absolute;
+    position: relative;
     display: block;
-    float: left;
+    float: right;
   }
 
   .drop-content {
@@ -35,3 +35,14 @@ h1 {
     display: block;
   }
 
+.drop-content a:hover {
+    background-color: grey;
+}
+
+.dropdown:hover {
+    display: inline-block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: green;
+}
