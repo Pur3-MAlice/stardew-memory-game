@@ -115,5 +115,16 @@ function selectCard() {
  * Function to update the point areas
  */
 function update() {
-
+    // if the cards aren't a match then flip and restart selectCards
+    if (firstCard.src != secondCard.src) {
+        firstCard.src ="/assets/images/back.jpg"
+        secondCard.src ="/assets/images/back.jpg"
+        errors += 1;
+        document.getElementById("errorcount").innerText = errors;
+    } else if (firstCard.src == secondCard.src) {
+        matches += 1;
+        document.getElementById("matchcount").innerText = matches;
+    }
+    firstCard = null;
+    secondCard = null;
 }
