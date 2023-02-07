@@ -4,22 +4,20 @@ let points = 0;
 
 /*List of Expert cards*/
 let cardList = [
-    "/assets/images/dustsprite",
-    "/assets/images/frostslime",
-    "/assets/images/ghost",
-    "/assets/images/greenslime",
-    "/assets/images/metalhead",
-    "/assets/images/purpleslime",
-    "/assets/images/redslime",
-    "/assets/images/skeleton",
-    "/assets/images/squidkid",
-    "/assets/images/tigerslime"
+    "/assets/images/pepper",
+    "/assets/images/poppy",
+    "/assets/images/strawberry",
+    "/assets/images/parsnip",
+    "/assets/images/grape",
+    "/assets/images/eggplant",
+    "/assets/images/amaranth",
+    "/assets/images/coffee"
 ];
 
 let pairSet;
 let board = [];
 let rows = 4;
-let columns = 5;
+let columns = 4;
 
 let firstCard;
 let secondCard;
@@ -61,9 +59,9 @@ function startGame() {
             let card = document.createElement("img");
             card.id =r.toString() + "-" + c.toString();
             card.src = cardImg + ".jpg"
-            card.classList.add("iridiumcard");
+            card.classList.add("goldcard");
             card.addEventListener("click", selectCard);
-            document.getElementById("iridiumboard").append(card);
+            document.getElementById("goldboard").append(card);
         }
         board.push(row);
       }
