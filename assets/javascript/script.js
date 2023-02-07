@@ -43,7 +43,16 @@ function shuffleCards() {
  */
 function startGame() {
     //arrange the board in 4 x5 for the iridium expert level
-    for (let r =0; r < rows; r++)
+    for (let r =0; r < rows; r++) {
+        let row = [];
+        for (let c= 0; c < columns; c++) {
+            let cardImg = pairSet.pop();
+            row.push(cardImg); 
+            let card = document.createElement("img");
+            card.id =rtoString() + "-" + ctostring();
+            card.src = cardImg + ".jpg"
+        }
+    }
 
 }    
 
