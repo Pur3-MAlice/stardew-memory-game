@@ -4,16 +4,16 @@ let points = 0;
 
 /*List of Expert cards*/
 let cardList = [
-    "dustsprite",
-    "frostslime",
-    "ghost",
-    "greenslime",
-    "metalhead",
-    "purpleslime",
-    "redslime",
-    "skeleton",
-    "squidkid",
-    "tigerslime"
+    "/assets/images/dustsprite",
+    "/assets/images/frostslime",
+    "/assets/images/ghost",
+    "/assets/images/greenslime",
+    "/assets/images/metalhead",
+    "/assets/images/purpleslime",
+    "/assets/images/redslime",
+    "/assets/images/skeleton",
+    "/assets/images/squidkid",
+    "/assets/images/tigerslime"
 ];
 
 let pairSet;
