@@ -4,22 +4,16 @@ let points = 0;
 
 /*List of Expert cards*/
 let cardList = [
-    "/assets/images/dustsprite",
-    "/assets/images/frostslime",
-    "/assets/images/ghost",
-    "/assets/images/greenslime",
-    "/assets/images/metalhead",
-    "/assets/images/purpleslime",
-    "/assets/images/redslime",
-    "/assets/images/skeleton",
-    "/assets/images/squidkid",
-    "/assets/images/tigerslime"
+    "/assets/images/elliot",
+    "/assets/images/haley",
+    "/assets/images/leah",
+    "/assets/images/alex",
 ];
 
 let pairSet;
 let board = [];
-let rows = 4;
-let columns = 5;
+let rows = 2;
+let columns = 4;
 
 let firstCard;
 let secondCard;
@@ -48,7 +42,6 @@ function shuffleCards() {
     console.log(pairSet);
 }   
 
-
 /**
  * Function to start game play
  */
@@ -62,14 +55,14 @@ function startGame() {
             let card = document.createElement("img");
             card.id =r.toString() + "-" + c.toString();
             card.src = cardImg + ".jpg"
-            card.classList.add("card");
+            card.classList.add("silvercard");
             card.addEventListener("click", selectCard);
-            document.getElementById("board").append(card);
+            document.getElementById("silverboard").append(card);
         }
         board.push(row);
       }
       console.log(board);
-      setTimeout(hideCards, 1000);
+      setTimeout(hideCards, 500);
       
     }
 /**
@@ -120,10 +113,14 @@ function update() {
         firstCard.src ="/assets/images/back.jpg"
         secondCard.src ="/assets/images/back.jpg"
         errors += 1;
+        points -= 1;
         document.getElementById("errorcount").innerText = errors;
+        document.getElementById("pointcount").innerText = points;
     } else if (firstCard.src == secondCard.src) {
         matches += 1;
+        points += 2;
         document.getElementById("matchcount").innerText = matches;
+        document.getElementById("pointcount").innerText = points;
     }
     firstCard = null;
     secondCard = null;

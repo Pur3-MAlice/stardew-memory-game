@@ -106,10 +106,28 @@ h1 {
     margin: 2.5rem 8em 2.5rem 8rem;
 }
 
-.card {
+.iridiumcard {
     height: 128px;
     width: 90px;
     margin: 5px;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+/*Silver(easy) page styling*/
+#silverboard {
+    height: 420px;
+    width: 606px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0E4A0E;
+    border: 10px solid #7F8A2E;
+}
+
+.silvercard {
+    height: 195px;
+    margin: 6px;
     border-radius: 8px;
     cursor: pointer
 }
