@@ -38,11 +38,12 @@ function shuffleCards() {
 
     //shuffle the cards
     for(let i = 0; i < pairSet.length; i++) {
-        let j = math.floor(math.random() * pairSet.length); //randomise 
+        let j = Math.floor(Math.random() * pairSet.length); //randomise 
         let temp = pairSet[i];
         pairSet[i] = pairSet[j];
         pairSet[j] = temp;
     }
+    console.log(pairSet);
 }   
 
 
