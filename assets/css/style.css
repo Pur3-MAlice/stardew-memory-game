@@ -1,7 +1,9 @@
 /* universal styling */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+Syloti+Nagri&family=VT323&display=swap');
+
 body {
     background: url(/assets/images/stardew-bg.jpg);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans Syloti Nagri', sans-serif;
     color: #fff;
     text-align: center;
     background-attachment: fixed;
@@ -12,6 +14,7 @@ body {
 
 h1 {
     margin: 50px;
+    font-family: 'DotGothic16', sans-serif;
     color: #000;
 }
 

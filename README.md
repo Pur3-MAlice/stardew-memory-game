@@ -99,27 +99,23 @@ SITE OVERVIEW
 #### *Color Scheme*
 * I used the loading image (seen below) and added in other complmentary colours to create a colour pallete and then used . I am planning to only use #fff and #000 for writing to increase asseibility.
 ![Contrast](/docs/screenshots/contrast-grid.png)
-![Color Palette Picker]()
-* 
-![Color Export]()
 #### *Typography*
-* Whilst doing research into the best Google Font combinations, I came across this article: [21 Google Fonts Combinations For Websites & Brands](https://www.garett.co/21-google-fonts-combinations-for-websites-brands). The Teko + Montserrat combination seemed to be the best suited to the aesthetic of the page. Plus, their readability is very good, so this is a plus for the accessibility of the website.
+* Whilst doing research into what best fonts to use - i was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file.
 ## **Universal Features**
 ### **Header Element**
 #### *Logo*
 * 
 #### *Nav Bar*
-* I wanted to add a traditional Navigation bar at the top of my website so the user could easily get from one page to another. 
-
-* The hover feature was employed to turn the lettering from white to black to make sure the user is aware that this is an active link which they can click.
-![Nav Bar Active Feature](docs/screenshot/nav-bar-image.png)
+* I wanted to add a Navigation button at the top-right of my website so the user could easily get from one page to another. This nav button used the traditional three stacked lines which is a colloqiual "menu" icon in websites. The icon was taken from fontawesome. 
+* The hover feature was employed to do the drop down function and highlight the links the user would be going to once the hover over on the button had been activated.
+![Nav Button]()
 ### **Hero Image**
-* The Hero Image, or Background Image for this website is the loading screen of the actual game itself. Screenshot below. All images were taken from the Games Wiki which states that the content is available under Creative Commons Attribution-NonCommercial-ShareAlike unless otherwise noted. [Creative Commons Link](https://creativecommons.org/licenses/by-nc-sa/3.0/). Due to the fact this will be a none profitable game and is free to use, all images can be freely copies, redistributed, modified and used. 
+* The Hero Image, or Background Image for this website is the loading screen of the actual game itself. Screenshot below. All images were taken from the Games Wiki "Stardew Valley Wiki", which states that the content is available under Creative Commons Attribution-NonCommercial-ShareAlike unless otherwise noted. [Creative Commons Link](https://creativecommons.org/licenses/by-nc-sa/3.0/). Due to the fact this will be a none profitable game and is free to use, all images can be freely copied, redistributed, modified and used. 
 ![Background Image](/assets/images/stardew-bg.jpg)
 ### **Footer**
-* For good UX I kept with a traditional website footer of social media links. This is clean and simple and is universal throughout the website. This pared down footer is a key part of the continuity of the website.
-* There is also a copyright - because I liked the addition.
-![Footer image](docs/screenshot/footer-image.png)
+* For good UX I kept with a traditional website footer of social media links. However to break from the footer "bar" i decided to just use the footer to hold the social media links and imply that the footer was see-through. This clean look show the background image behind and implies that the game board is the interactive part of the site. Hvaing the footer be more subtle lends to an elegant look. This is done throughout the website and a key part of the continuity of the website.
+* There is also a copyright - because I liked the addition and becasue the images were taken from the Stardew Valley game which was created by Concerned Ape themselves, so i felt this needed to be made clear that the images are not my own.
+![Footer image]()
 ## **Page Content Features**
 ### **About Content**
 * 
@@ -135,11 +131,11 @@ SITE OVERVIEW
 * 
 ## **Credits**
 ### **References**
-* Whilst I did try to deviate as much as possible, this project was influenced by 
-* I would also like to mention that, before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. Whilst no code was directly taken from these other projects, I can say that my research did influence how I built the project initially - hwoever strong deviations were taken after my research and the initial build. (Notable mentions: YOUTUBE VIDEOS ON THE BUILDS)
+* Whilst I did try to deviate as much as possible, this project was influenced by the reaserch I did before starting this project.
+* Before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. Whilst no code was directly taken from these other projects and was all typed and built by me, I can say that my research did influence how I built the project initially - hwoever strong deviations were taken after my research and the initial build. (Notable mentions: [Make MEMORY GAME in JavaScript, HTML and CSS for your portfolio](https://www.youtube.com/watch?v=tjyDOHzKN0w)), [Build A Memory Card Game in HTML CSS & JavaScript](https://www.youtube.com/watch?v=DABkhfsBAWw), [Memory Game Javascript Project | HTML, CSS, Javascript](https://www.youtube.com/watch?v=dqqxkrKhfS4) these were the most helpful but weren't the only videos I watched during my research phase.)
 * I did rely on StackOverflow, W3schools, CSS-TRICKS and MDN web docs for general references and problem solving throughout the project.
 ### **Content**
-* WHERE WERE ALL THE IMAGES TAKEN FROM AND WHERE WAS ANY WRITTEN CONTENT TAKEN FROM 
+* All images were taken from [Stardew Valley Wiki](https://stardewvalleywiki.com/Stardew_Valley_Wiki) and are used under the 
 ### **Media**
 * All images were taken from Pexels.com. WHERE WERE ALL THE IMAGE TAKEN 
 ## **Deployment**
