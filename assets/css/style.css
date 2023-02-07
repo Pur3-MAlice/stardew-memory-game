@@ -2,7 +2,7 @@
 body {
     background: url(/assets/images/stardew-bg.jpg);
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    color: #fff;
     text-align: center;
     background-attachment: fixed;
     background-size: cover;
@@ -66,3 +66,24 @@ h1 {
 .dropdown:hover .dropbutton {
     background-color: #508a50;
 }
+
+/*Iridium(expert) page styling*/
+
+#board {
+    height: 575px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0E4A0E;
+    border: 10px solid #7F8A2E;
+  }
+
+  #errors, #matches, #points {
+    background-color: #0E4A0E;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 25%;
+    margin: 2.5rem 8em 2.5rem 8rem;
+  }

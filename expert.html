@@ -12,21 +12,22 @@
 
 
 <body>
-    <div>DROP DOWN BUTTON
-        <button class = "drop"></button>
-        <div class = "drop-content">
+    <div class="dropdown">
+        <button class="dropbutton"><i class="fa-solid fa-bars"></i></button>
+        <div class="drop-content">
             <a href="index.html">Home</a>
             <a href="#">About the theme material??</a>
             <a href="#.html">How to play???</a>
         </div>
     </div>
-    <h1>TITLE OF GAME</h1>
-    <div id="board">GAME BOARD</div>
+    <h1>STARDEW VALLEY MEMORY GAME</h1>
+    <div id="board"></div>
 
-    <div>POINT COUNTERS</div>
-    <div id="matches">Matches:</div>
-    <div id="points">Points:</div>
-    <div id="errors">Errors:</div>
+    <div id="counters">
+      <div id="matches"><h2>Matches: <span id="matchcount">0</span></h2></div>
+      <div id="points"><h2>Points: <span id="pointcount">0</span></h2></div>
+      <div id="errors"><h2>Errors: <span id="errorcount">0</span></h2></div>
+    </div>
 
 </body>
 
@@ -35,5 +36,7 @@
     <div>links to socials</div>
     <div>copyrights</div>
 </footer>
+<!---Font Awesome Script-->
+<script src="https://kit.fontawesome.com/9096438b6b.js" crossorigin="anonymous"></script>
 
 </html>
