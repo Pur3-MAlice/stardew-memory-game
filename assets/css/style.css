@@ -15,6 +15,24 @@ h1 {
     color: #000;
 }
 
+#social {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #0E4A0E;
+}
+
+#copyright {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 8px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    background-color: #0E4A0E;
+}
+
 /* Home Page styling*/
 #home-board {
     height: 575px;
