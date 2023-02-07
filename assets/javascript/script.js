@@ -35,7 +35,15 @@ window.onload = function() {
 function shuffleCards() { 
     pairSet = cardList.concat(cardList); //get two of each of the cards (create pairs)
     console.log(pairSet);
-}   //shuffle the cards
+
+    //shuffle the cards
+    for(let i = 0; i < pairSet.length; i++) {
+        let j = math.floor(math.random() * pairSet.length); //randomise 
+        let temp = pairSet[i];
+        pairSet[i] = pairSet[j];
+        pairSet[j] = temp;
+    }
+}   
 
 
 /**
@@ -60,7 +68,12 @@ function startGame() {
  * Function to hide the cards with an image
  */
 function hideCards() {
-
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            let card = document.getElementById(r.toString()+ "-" + c.toString());
+            card.src = "/assets/images/back.jpg"
+        }
+    }
 }    
 
 /**
