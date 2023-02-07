@@ -95,13 +95,21 @@ h1 {
     flex-wrap: wrap;
     background-color: #0E4A0E;
     border: 10px solid #7F8A2E;
-  }
+}
 
-  #errors, #matches, #points {
+#errors, #matches, #points {
     background-color: #0E4A0E;
     display: inline-block;
     padding: 8px;
     border-radius: 8px;
     margin-left: 25%;
     margin: 2.5rem 8em 2.5rem 8rem;
-  }
+}
+
+.card {
+    height: 128px;
+    width: 90px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer
+}

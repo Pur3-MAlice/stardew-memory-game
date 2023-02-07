@@ -21,6 +21,8 @@ let board = [];
 let rows = 4;
 let columns = 5;
 
+let firstCard;
+let secondCard;
 /** 
  * Function to shuffle cards and start the game as soon as window is loaded
  */
@@ -64,12 +66,14 @@ function startGame() {
             card.addEventListener("click", selectCard);
             document.getElementById("board").append(card);
         }
+        board.push(row);
+      }
+      console.log(board);
+      setTimeout(hideCards, 1000);
+      
     }
-
-}    
-
 /**
- * Function to hide the cards with an image
+ * Function to hide the cards with an image that will be removed once clicked
  */
 function hideCards() {
     for (let r = 0; r < rows; r++) {
@@ -84,8 +88,28 @@ function hideCards() {
  * Function to select the cards
  */
 function selectCard() {
-
-}
+    if (this.src.includes("back")) {
+      if (!firstCard) {
+        firstCard = this;
+  
+        let coords = firstCard.id.split("-");
+        let r = parseInt(coords[0]);
+        let c = parseInt(coords[1]);
+  
+        firstCard.src = board[r][c] + ".jpg";
+      }
+      else if (!secondCard && this != firstCard) {
+        secondCard = this;
+  
+          let coords = secondCard.id.split("-");
+          let r = parseInt(coords[0]);
+          let c = parseInt(coords[1]);
+  
+          secondCard.src = board[r][c] + ".jpg";
+          setTimeout(update, 1000);
+      }
+    }
+  }
 
 /**
  * Function to update the point areas
