@@ -8,3 +8,30 @@ h1 {
     margin: 50px;
     color: #000;
   }
+
+  .dropbutton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: block;
+    float: left;
+  }
+
+  .drop-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+  }
+
+  .drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
