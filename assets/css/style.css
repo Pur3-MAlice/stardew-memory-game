@@ -49,26 +49,34 @@ h1 {
     color: #fff;
 }
 
-#home-board, h3{
-    font-family: 'Noto Sans Syloti Nagri', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 10px;
-}
-
-#home-board, p{
-    margin: 0 0 10px;
-}
-
 /* About Stardew styling*/
 #about-board {
-    height: 575px;
+    height: 580px;
     width: 800px;
     margin: 0 auto;
     flex-wrap: wrap;
     background-color: #0E4A0E;
     border: 10px solid #7F8A2E;
     color: #fff;
+}
+
+#about-board p{
+    margin: 10px 10px 10px 25px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#about-board a{
+    color: #fff;
+    font-size: 14px;
+}
+
+#about-board h3{
+    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 10px 10px 25px;
+    text-align: left;
 }
 
 /* Drop button styling */ 
