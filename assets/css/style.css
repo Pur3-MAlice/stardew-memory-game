@@ -28,14 +28,19 @@ h1 {
     background-color: #0E4A0E;
 }
 
-#copyright {
-    position: relative;
-    display: block;
-    float: right;
-    padding: 8px;
-    border-radius: 8px;
-    flex-wrap: wrap;
-    background-color: #0E4A0E;
+#disclaimer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #0e4a0eb6;
+    border-radius: 4px;
+}
+
+#copyrightimg{
+    width: 77px;
+    position: fixed;
+    bottom: 20px;
+    right: 2px;
 }
 
 /* Drop Button Styling */ 

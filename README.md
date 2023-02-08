@@ -75,32 +75,36 @@ SITE OVERVIEW
 * After each move, the relevant tally will be modified. Overall game play will be scored.
 ### **Wireframes**
 * Below are some screengrabs of the desktop and mobile wireframes made for this project.
-* Some notable changes and differences 
+* Some notable changes and differences is the addition of a "table" behind the cards, home page and about sections. I did this first of all for better accesibility and contrast, secondly becuase it hghlights the game play area easisly and looks more clean, and last of all becuase it emulates a classic game table.
+* Another change is that I have added a disclaimer at the bottom of each page to ensure that people are aware that all imagery is taken from Stardew Valley, and was not a creation of mine. 
 #### *Desktop*
-![desktop home page]()
+![desktop home page](/docs/wireframes/wireframes-homepage-desktop.jpg)
 
-![desktop about us page]()
+![desktop about us & how to page](/docs/wireframes/wireframes-about-howto-desktop.jpg)
 
-![desktop easy page]()
-
-![desktop how to page]()
+![desktop gameplay page](/docs/wireframes/wireframes-gameplay-desktop.jpg)
 
 #### *Mobile*
-![mobile home page]()
+![mobile home page](/docs/wireframes/wireframes-homepage-mobile.jpg)
 
-![mobile about us page]()
+![mobile aabout us & how to page](/docs/wireframes/wireframes-about-howto-mobile.jpg)
 
-![mobile easy page]()
+![mobile gameplay page](/docs/wireframes/wireframes-gameplay-mobile.jpg)
 
-![mobile how to page]()
+#### *Tablet*
+![mobile home page](/docs/wireframes/wireframes-homepage-tablet.jpg)
+
+![mobile aabout us & how to page](/docs/wireframes/wireframes-about-howto-tablet.jpg)
+
+![mobile gameplay page](/docs/wireframes/wireframes-gameplay-tablet.jpg)
 
 ### **Design**
-* The over all design theme for this game came from the cult classic game of "Stardew Valley" a farming sim that was relised in 2014. This game has a huge following and has sold over 10 million copies. The bright and nostalgic pixel art is pleasing to look at and the icons in the game lend themselves to this type of spin-off game. 
+* The basis of the design theme for this game came from the cult classic game of "Stardew Valley" a farming sim that was relised in 2014. This game has a huge following and has sold over 10 million copies. The bright and nostalgic pixel art is pleasing to look at and the icons in the game lend themselves to this type of spin-off game. It also has lots of groupable icons that can be used as card faces. Plus the bright colours made to create an intresting colour pallette with high contrast.
 #### *Color Scheme*
 * I used the loading image (seen below) and added in other complmentary colours to create a colour pallete and then used . I am planning to only use #fff and #000 for writing to increase asseibility.
 ![Contrast](/docs/screenshots/contrast-grid.png)
 #### *Typography*
-* Whilst doing research into what best fonts to use - i was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file.
+* Whilst doing research into what best fonts to use - I was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible due to blur. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file.
 ## **Universal Features**
 ### **Header Element**
 #### *Logo*
