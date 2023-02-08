@@ -20,7 +20,7 @@ let firstCard;
 let secondCard;
 
 /** 
- * Function to shuffle cards and start the game as soon as window is loaded
+ * Function to shuffle cards, log the start score/highest score and start the game as soon as window is loaded
  */
 window.onload = function() {
     shuffleCards();
@@ -135,17 +135,11 @@ function update() {
 function endGame() {
     if (matches === cardList.length) {
         alert (`You've found all the Cards! Your Score is ${points}. Refresh to play this level again`);
-        localStorage.setItem('silverScore', points);
-        silverScore = localStorage.getItem('silverScore');
-        document.getElementById("silvercount").innerText = silverScore;
-        //Local Stoarage for Highscore
-    
-        
-    //     if (silverScore > points) {
-    //         localStorage.getItem(silverScore)
-    //         document.getElementById("silvercount").innerText = silverScore;
-    //    /}
-        
+     //Add score to local.storage and replace value if new score is > than old score.
+        if (points > silverScore) {
+            localStorage.setItem('silverScore', points);
+            silverScore = localStorage.getItem('silverScore');
+            document.getElementById("silvercount").innerText = silverScore;
+        }
     }
-    //Add score to local.storage and replace value if new score is > than old score.
 }
