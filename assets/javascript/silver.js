@@ -123,13 +123,15 @@ function update() {
     //reset the card values to null to get the next pair
     firstCard = null; 
     secondCard = null; 
+    setTimeout(endGame, 500);
 }
 
 /**
  * Function to alert the user at the end of the game
  */
 function endGame() {
-    if (/*all cards have been found*/) {
+    if (matches === cardList.length) {
+        let score = points;
         alert (`You've found all the Cards! Your Score is ${score}. Refresh to play this level again`);
         //Add score to local.storage and replace value if new score is > than old score. 
     }
