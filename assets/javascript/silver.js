@@ -2,7 +2,7 @@
 let errors = 0;
 let matches = 0;
 let points = 0;
-
+let silverScore;
 
 //List of silver level cards
 let cardList = [
@@ -127,20 +127,21 @@ function update() {
     setTimeout(endGame, 500);
 }
 
-let silverScore = 0;
-
 /**
- * Function to alert the user at the end of the game
+ * Function to alert the user at the end of the game, set highscore in local storage.
  */
 function endGame() {
     if (matches === cardList.length) {
         let score = points;
         alert (`You've found all the Cards! Your Score is ${score}. Refresh to play this level again`);
-        //Add score to local.storage and replace value if new score is > than old score. 
         document.getElementById("silvercount").innerText = score;
-        if (score > silverScore) {
-            let silverScore = score;
-        }
-        localStorage.setItem('silverScore')
+
+        //Local Stoargae for Highscore
+        localStorage.setItem('silverScore', score);
+        silverScore = localStorage.getItem('silverScore');
+        silverCount = silverScore;
+        let silverCount = document.getElementById("silvercount").innerText;
     }
+
+    //Add score to local.storage and replace value if new score is > than old score.
 }
