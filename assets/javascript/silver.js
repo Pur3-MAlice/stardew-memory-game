@@ -2,7 +2,6 @@
 let errors = 0;
 let matches = 0;
 let points = 0;
-let silverScore;
 
 //List of silver level cards
 let cardList = [
@@ -26,7 +25,10 @@ let secondCard;
 window.onload = function() {
     shuffleCards();
     startGame();
-  }
+    silverScore = localStorage.getItem('silverScore')
+    localStorage.getItem('silverScore');
+    document.getElementById("silvercount").innerText = silverScore;
+}
 
 /**
  * Function to shuffle the cardList and create pairs by duplicating the array
@@ -132,16 +134,18 @@ function update() {
  */
 function endGame() {
     if (matches === cardList.length) {
-        let score = points;
-        alert (`You've found all the Cards! Your Score is ${score}. Refresh to play this level again`);
-        document.getElementById("silvercount").innerText = score;
-
-        //Local Stoargae for Highscore
-        localStorage.setItem('silverScore', score);
+        alert (`You've found all the Cards! Your Score is ${points}. Refresh to play this level again`);
+        localStorage.setItem('silverScore', points);
         silverScore = localStorage.getItem('silverScore');
-        silverCount = silverScore;
-        let silverCount = document.getElementById("silvercount").innerText;
+        document.getElementById("silvercount").innerText = silverScore;
+        //Local Stoarage for Highscore
+    
+        
+    //     if (silverScore > points) {
+    //         localStorage.getItem(silverScore)
+    //         document.getElementById("silvercount").innerText = silverScore;
+    //    /}
+        
     }
-
     //Add score to local.storage and replace value if new score is > than old score.
 }
