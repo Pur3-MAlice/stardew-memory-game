@@ -1,8 +1,9 @@
+//Inital score set
 let errors = 0;
 let matches = 0;
 let points = 0;
 
-/*List of Expert cards*/
+//List of gold level cards
 let cardList = [
     "/assets/images/pepper",
     "/assets/images/poppy",
@@ -14,6 +15,7 @@ let cardList = [
     "/assets/images/coffee"
 ];
 
+//Variables for the Pairs, cards, rows & coloumns and board. The build of the game
 let pairSet;
 let board = [];
 let rows = 4;
@@ -21,6 +23,7 @@ let columns = 4;
 
 let firstCard;
 let secondCard;
+
 /** 
  * Function to shuffle cards and start the game as soon as window is loaded
  */
@@ -50,12 +53,13 @@ function shuffleCards() {
  * Function to start game play
  */
 function startGame() {
-    //arrange the board in 4 x5 for the iridium expert level
+    //arrange the board in 4x4 for the gold level
     for (let r = 0; r < rows; r++) {
         let row = [];
         for (let c= 0; c < columns; c++) {
             let cardImg = pairSet.pop();
             row.push(cardImg); 
+             //create the cards images and add them to the board when the window is loaded
             let card = document.createElement("img");
             card.id =r.toString() + "-" + c.toString();
             card.src = cardImg + ".jpg"
@@ -66,7 +70,7 @@ function startGame() {
         board.push(row);
       }
       console.log(board);
-      setTimeout(hideCards, 500);
+      setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg
       
     }
 /**
@@ -82,31 +86,26 @@ function hideCards() {
 }    
 
 /**
- * Function to select the cards
+ * Function to select two cards if the card value includes "back" (card values need resetting after this is called)
  */
 function selectCard() {
     if (this.src.includes("back")) {
-      if (!firstCard) {
-        firstCard = this;
-  
-        let coords = firstCard.id.split("-");
-        let r = parseInt(coords[0]);
-        let c = parseInt(coords[1]);
-  
-        firstCard.src = board[r][c] + ".jpg";
-      }
-      else if (!secondCard && this != firstCard) {
-        secondCard = this;
-  
-          let coords = secondCard.id.split("-");
-          let r = parseInt(coords[0]);
-          let c = parseInt(coords[1]);
-  
-          secondCard.src = board[r][c] + ".jpg";
-          setTimeout(update, 1000);
-      }
+        if (!firstCard) {
+            firstCard = this;
+            let coords = firstCard.id.split("-");
+            let r = parseInt(coords[0]);
+            let c = parseInt(coords[1]);
+            firstCard.src = board[r][c] + ".jpg";
+        } else if (!secondCard && this != firstCard) { //Make sure the first card clicked and second card clicked aren't the same card
+            secondCard = this;
+            let coords = secondCard.id.split("-");
+            let r = parseInt(coords[0]);
+            let c = parseInt(coords[1]);
+            secondCard.src = board[r][c] + ".jpg";
+            setTimeout(update, 1000); //if cards aren't a match then wait one second and call the update function
+        }
     }
-  }
+}
 
 /**
  * Function to update the point areas
@@ -126,6 +125,7 @@ function update() {
         document.getElementById("matchcount").innerText = matches;
         document.getElementById("pointcount").innerText = points;
     }
+    //reset the card values to null to get the next pair
     firstCard = null;
     secondCard = null;
 }
