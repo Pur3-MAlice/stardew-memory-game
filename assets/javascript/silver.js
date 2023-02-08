@@ -124,3 +124,13 @@ function update() {
     firstCard = null; 
     secondCard = null; 
 }
+
+/**
+ * Function to alert the user at the end of the game
+ */
+function endGame() {
+    if (/*all cards have been found*/) {
+        alert (`You've found all the Cards! Your Score is ${score}. Refresh to play this level again`);
+        //Add score to local.storage and replace value if new score is > than old score. 
+    }
+}
