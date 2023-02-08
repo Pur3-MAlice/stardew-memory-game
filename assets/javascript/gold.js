@@ -82,7 +82,7 @@ function startGame() {
 function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
-            let card = document.getElementById(r.toString()+ "-" + c.toString());
+            let card = document.getElementById(r.toString()+ "-" + c.toString()); //const?
             card.src = "/assets/images/back.jpg"
         }
     }
@@ -95,7 +95,7 @@ function selectCard() {
     if (this.src.includes("back")) {
         if (!firstCard) {
             firstCard = this;
-            let coords = firstCard.id.split("-");
+            let coords = firstCard.id.split("-"); //CONST??
             let r = parseInt(coords[0]);
             let c = parseInt(coords[1]);
             firstCard.src = board[r][c] + ".jpg";
