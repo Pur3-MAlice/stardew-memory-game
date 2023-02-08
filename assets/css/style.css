@@ -154,12 +154,34 @@ a:visited {
     padding: 8px;
     border-radius: 8px;
     margin: 5.5rem 8em 2.5rem 8rem;
+    font: 20px;
 }
 
 #play a {
     color: #fff;
     margin-left: 38.5%;
     background-color: #3A7DA8;
+}
+
+input {
+    visibility:hidden;
+}
+
+label {
+    cursor: pointer;
+    background: pink;
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 8px;
+    margin: 30px 25% 0px 25%;
+}
+
+input:checked + label {
+    background: red;
+}
+
+#levelchoice {
+    color: purple;
 }
 
 #score-board {
@@ -218,7 +240,6 @@ a:visited {
 #howto-board li {
     padding: 10px 12px 10px 12px;
 }
-
 
 #howto-board > h3{
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
@@ -291,4 +312,3 @@ a:visited {
     border-radius: 8px;
     cursor: pointer
 }
-
