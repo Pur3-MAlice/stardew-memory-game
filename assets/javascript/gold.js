@@ -20,7 +20,6 @@ let pairSet;
 let board = [];
 let rows = 4;
 let columns = 4;
-
 let firstCard;
 let secondCard;
 
@@ -30,7 +29,10 @@ let secondCard;
 window.onload = function() {
     shuffleCards();
     startGame();
-  }
+    goldScore = localStorage.getItem('goldScore')
+    localStorage.getItem('goldScore');
+    document.getElementById("goldcount").innerText = goldScore;
+}
 
 /**
  * Function to shuffle the cardList and create pairs by duplicating the array
@@ -68,11 +70,12 @@ function startGame() {
             document.getElementById("goldboard").append(card);
         }
         board.push(row);
-      }
-      console.log(board);
-      setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg
-      
     }
+    console.log(board);
+    setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg
+      
+}
+
 /**
  * Function to hide the cards with an image that will be removed once clicked
  */
@@ -128,4 +131,20 @@ function update() {
     //reset the card values to null to get the next pair
     firstCard = null;
     secondCard = null;
+    setTimeout(endGame, 500);
+}
+
+/**
+ * Function to alert the user at the end of the game, set highscore in local storage.
+ */
+function endGame() {
+    if (matches === cardList.length) {
+        alert (`You've found all the Cards! Your Score is ${points}. Refresh to play this level again`);
+     //Add score to local.storage and replace value if new score is > than old score.
+        if (points > goldScore) {
+            localStorage.setItem('goldScore', points);
+            goldScore = localStorage.getItem('goldScore');
+            document.getElementById("goldcount").innerText = goldScore;
+        }
+    }
 }

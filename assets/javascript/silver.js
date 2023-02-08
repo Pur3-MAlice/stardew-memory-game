@@ -66,11 +66,12 @@ function startGame() {
             document.getElementById("silverboard").append(card);
         }
         board.push(row);
-      }
-      console.log(board);
-      setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg
-      
     }
+    console.log(board);
+    setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg
+      
+}
+
 /**
  * Function to hide the cards with an image that will be removed once clicked
  */
