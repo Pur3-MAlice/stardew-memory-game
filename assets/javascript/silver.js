@@ -3,6 +3,7 @@ let errors = 0;
 let matches = 0;
 let points = 0;
 
+
 //List of silver level cards
 let cardList = [
     "/assets/images/elliot",
@@ -126,6 +127,8 @@ function update() {
     setTimeout(endGame, 500);
 }
 
+let silverScore = 0;
+
 /**
  * Function to alert the user at the end of the game
  */
@@ -134,5 +137,10 @@ function endGame() {
         let score = points;
         alert (`You've found all the Cards! Your Score is ${score}. Refresh to play this level again`);
         //Add score to local.storage and replace value if new score is > than old score. 
+        document.getElementById("silvercount").innerText = score;
+        if (score > silverScore) {
+            let silverScore = score;
+        }
+        localStorage.setItem('silverScore')
     }
 }
