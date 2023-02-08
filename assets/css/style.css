@@ -76,7 +76,7 @@ a:visited {
     position: fixed;
     left: 12.5%;
     top: 40%;
-    background: PINK;
+    background: #8c1c04;
     padding: 30px;
     border-radius: 10px;
 }
@@ -86,7 +86,7 @@ a:visited {
     position: fixed;
     right: 12.5%;
     top: 40%;
-    background: PINK;
+    background: #8c1c04;
     padding: 30px;
     border-radius: 10px;
 }
@@ -150,7 +150,7 @@ a:visited {
 }
 
 #home-board a {
-    background-color: pink;
+    background-color: #68190a;
     display: block;
     padding: 8px;
     border-radius: 8px;
@@ -163,6 +163,15 @@ a:visited {
     padding: 8px;
     border-radius: 8px;
     margin: 5.5rem 8em 2.5rem 8rem;
+}
+
+#score-board {
+    width: 25%;
+    margin: 0 auto;
+    background-color: #68190a;
+    border: 10px solid #8c1c04;
+    color: #fff;
+    position: absolute;
 }
 
 /* About Stardew Styling*/
