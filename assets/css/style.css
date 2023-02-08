@@ -20,27 +20,40 @@ h1 {
     font-size: 40px;
 }
 
-#social-buttons {
+#social-buttons, #social-buttons-text {
     display: inline-flex;
     align-items: center;
     padding: 8px;
     border-radius: 8px;
     background-color: #7f8a2e6b;
     font-size: 40px;
-    margin: 10px;
+    margin: 0px 0px 0px 30px;
 }
-
-#social-buttons i{
-    margin: 20px;
-}    
 
 #social-buttons i:hover{
     color: #000;
     cursor: pointer;
 }   
 
-#social-buttons a:visited {
+#social-buttons-text i:hover{
+    color: #000;
+    cursor: pointer;
+}  
+
+#social-buttons i{
+    margin: 10px;
+}   
+
+#social-buttons-text i{
+    margin: 10px;
+}  
+
+a:visited {
     color: #fff;
+}
+
+#social-buttons-text {
+    margin: 30px;
 }
 
 #disclaimer {
@@ -61,7 +74,17 @@ h1 {
 #homebutton {
     color: #fff;
     position: fixed;
-    left: 6%;
+    left: 12.5%;
+    top: 40%;
+    background: PINK;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#next {
+    color: #fff;
+    position: fixed;
+    right: 12.5%;
     top: 40%;
     background: PINK;
     padding: 30px;
@@ -160,7 +183,7 @@ h1 {
     font-size: 14px;
 }
 
-#about-board h3{
+#about-board > h3{
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -168,9 +191,37 @@ h1 {
     text-align: left;
 }
 
+/* How to Stardew Styling*/
+#howto-board {
+    height: 580px;
+    width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #0E4A0E;
+    border: 10px solid #7F8A2E;
+    color: #fff;
+    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+    text-align: left;
+    font-size: 22px;
+}
+
+#howto-board li {
+    padding: 10px 12px 10px 12px;
+}
+
+
+#howto-board > h3{
+    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 10px 10px 25px;
+    text-align: center;
+    color: #fff;
+}
+
 /* Iridium Page Styling */
 #iridiumboard {
-    height: 575px;
+    height: 555px;
     width: 500px;
     margin: 0 auto;
     display: flex;
@@ -184,8 +235,7 @@ h1 {
     display: inline-block;
     padding: 8px;
     border-radius: 8px;
-    margin-left: 25%;
-    margin: 2.5rem 8em 2.5rem 8rem;
+    margin: 2.5rem 7em 11.5px 7rem;;
 }
 
 .iridiumcard {
