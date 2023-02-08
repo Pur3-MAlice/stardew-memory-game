@@ -58,6 +58,16 @@ h1 {
     right: 2px;
 }
 
+#homebutton {
+    color: #fff;
+    position: fixed;
+    left: 6%;
+    top: 40%;
+    background: PINK;
+    padding: 30px;
+    border-radius: 10px;
+}
+
 /* Drop Button Styling */ 
 .dropbutton {
     background-color: #0E4A0E;
