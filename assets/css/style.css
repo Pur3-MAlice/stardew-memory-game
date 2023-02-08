@@ -20,12 +20,27 @@ h1 {
     font-size: 40px;
 }
 
-#social {
+#social-buttons {
     display: inline-flex;
     align-items: center;
     padding: 8px;
     border-radius: 8px;
-    background-color: #0E4A0E;
+    background-color: #7f8a2e6b;
+    font-size: 40px;
+    margin: 10px;
+}
+
+#social-buttons i{
+    margin: 20px;
+}    
+
+#social-buttons i:hover{
+    color: #000;
+    cursor: pointer;
+}   
+
+#social-buttons a:visited {
+    color: #fff;
 }
 
 #disclaimer {
@@ -173,8 +188,8 @@ h1 {
 
 /* Gold Page Styling */
 #goldboard {
-    height: 590gitpx;
-    width: 435px;
+    height: 500px;
+    width: 355px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -183,8 +198,8 @@ h1 {
 }
 
 .goldcard {
-    height: 135px;
-    margin: 6px;
+    height: 110px;
+    margin: 5px;
     border-radius: 8px;
     cursor: pointer
 }
