@@ -148,21 +148,18 @@ a:visited {
     flex-direction: column;
     padding-top: 20px;
 }
-
-#home-board a {
-    background-color: #68190a;
-    display: block;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 2.5rem 8em 2.5rem 8rem;
-}
-
-#home-board #play a {
+#play {
     background-color: #3A7DA8;
-    display: block;
+    color: #fff;
     padding: 8px;
     border-radius: 8px;
     margin: 5.5rem 8em 2.5rem 8rem;
+}
+
+#play a {
+    color: #fff;
+    margin-left: 38.5%;
+    background-color: #3A7DA8;
 }
 
 #score-board {

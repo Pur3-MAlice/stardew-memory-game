@@ -21,24 +21,23 @@ window.onload = function() {
     const iridiumLevel = document.getElementById('iridiumLevel');
   
     silverLevel.onclick = pickSilverLevel;
-    goldLevel.onclick = pickGoldLevel(goldLevel);
-    iridiumLevel.onclick = pickIridiumLevel(iridiumLevel);
+    goldLevel.onclick = pickGoldLevel;
+    iridiumLevel.onclick = pickIridiumLevel;
 
 }
 
 /**
- * Function to chose the level diffiulty
+ * Functions to chose the level diffiulty
  */
-
 function pickSilverLevel() {
-    document.getElementById('play').innerHTML = `<div><a href="silver.html" id="play">PLAY</a></div>`;
+    document.getElementById('play').innerHTML = `<a href="silver.html" id="play">PLAY</a>`;
 }
 
 function pickGoldLevel() {
-    document.getElementById('play').innerHTML = `<div><a href="silver.html" id="play">PLAY</a></div>`;
+    document.getElementById('play').innerHTML = `<a href="gold.html" id="play">PLAY</a>`;
 }
 
 function pickIridiumLevel() {
-    document.getElementById('play').innerHTML = `<div><a href="silver.html" id="play">PLAY</a></div>`;
+    document.getElementById('play').innerHTML = `<a href="iridium.html" id="play">PLAY</a>`;
 }
 
