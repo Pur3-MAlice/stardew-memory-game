@@ -16,7 +16,6 @@ h1 {
     margin: 30px;
     font-family: 'DotGothic16', sans-serif;
     color: #000;
-    align-items: center center;
     font-size: 40px;
 }
 
@@ -93,6 +92,12 @@ a:visited {
 
 #highscore {
     background-color: black;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 4px;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 535px;
+    text-align: center;
 }
 
 /* Drop Button Styling */ 
@@ -138,7 +143,7 @@ a:visited {
 
 /* Home Page Styling */
 #home-board {
-    height: 575px;
+    height: 525px;
     width: 500px;
     margin: 0 auto;
     display: flex;
@@ -150,7 +155,7 @@ a:visited {
 }
 #play {
     background-color: #3A7DA8;
-    color: #fff;
+    color: #3A7DA8;
     padding: 8px;
     border-radius: 8px;
     margin: 5.5rem 8em 2.5rem 8rem;
@@ -160,7 +165,7 @@ a:visited {
 #play a {
     color: #fff;
     margin-left: 38.5%;
-    background-color: #3A7DA8;
+    text-decoration: none;
 }
 
 input {
@@ -169,7 +174,7 @@ input {
 
 label {
     cursor: pointer;
-    background: pink;
+    background: #8c1c04;
     border-radius: 8px;
     font-size: 17px;
     padding: 8px;
@@ -177,11 +182,18 @@ label {
 }
 
 input:checked + label {
-    background: red;
+    background: #68190a;
 }
 
 #levelchoice {
-    color: purple;
+    background-color: black;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 4px;
+    font-size: 32px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 520px;
+    text-align: center;
 }
 
 #score-board {
@@ -223,7 +235,7 @@ input:checked + label {
     text-align: left;
 }
 
-/* How to Stardew Styling*/
+/* How to & About Stardew Styling*/
 #howto-board {
     height: 580px;
     width: 800px;
