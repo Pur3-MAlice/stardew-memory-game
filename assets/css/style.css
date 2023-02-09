@@ -135,8 +135,12 @@ a:visited {
     cursor: pointer;
 }
 
-.button, a {
+.button a {
     border: 30px;
+    display: flex;
+    padding-top: 25px;
+    align-content: center;
+    flex-direction: column-reverse;
 }
   
 .button:hover {

@@ -317,14 +317,19 @@ Below is a list of bugs I found during the development process. A lot of the bug
 ### **Validators**
 #### ***HTML*** - https://validator.w3.org/nu/  
 * ***Issue Found:***
-    * 
+    * A href cannot be desendant of button
 * ***Solution Used:***
-    *  
-*
-![HTML validator]()
+    *  Chnaged button to div and adapted css styling to fit
+* ***Issue Found:***
+    * alt attribute cannot be used in a href
+* ***Solution Used:***
+    *  Removed alts from a href's
+
+![HTML validator](/docs/screenshots/html-validator.jpg)
 #### ***CSS*** - https://jigsaw.w3.org/css-validator/
-* 
-![CSS badge]()
+* Code passes through with no issues.
+
+![CSS badge](/docs/screenshots/css-validator.jpg)
 
 #### ***Javascript*** - https://jshint.com/
 * Code passes through only stating that console and alert are undefined variables. Despite that these aren't variables and that these words have functions inside Javascript.
