@@ -149,14 +149,16 @@ SITE OVERVIEW
 * Under the Source section, select the Main branch from the drop-down menu and click Save.
 * [JAVASCRIPT GAME]()
 ## **During Development Testing**
+### ***Manual Testing:***
 During the development process, I was manually testing in the following ways:-
 * Manually testing each element for appearance and responsiveness via a simulated live server using an extension in VSCode.
     * Detailed below is the method in which I test the site for responsiveness and to make sure that it did what was intended. This test was focused on console.log errors ad external links going into a new tab
         1. Starting on the home page and opening the dev tools to get to the console.log. I ensured that this was a fresh simulated live server. So to ensure that past testing and local.storage wouldn't interfer with this round of manual testing. 
         2. Home Page External Links: To make sure all external links on this page were working I hovered over and clicked the "Github" "Codepen" & the Disclaimer Icon fixed to the bottom of the screen. The "Github" & "Codepen" were to turn black once hovered over - and they both did. the cursor also turned into a pointer for all three links as intended. Also all three external links opened out into a new tab as intended.
-        3. Home Page Internal Links
+        3. Home Page Internal Links: On the all pages there is a Nav button. When hovered over it should change to a lighter shade of green and three dropdown tabs should pop up underneath. The hover function once deployed on the tabs beneath should then change colour to match the interacted with Nav button. Clicking on the tabs should take you to the "Home", "What is Stardew Valley?" & "How to Play" respectivley. These should not go into new tabs. And they do.
+        4. Home Page Initial Console.log: Wihtout interacting with anything the console appears blank. 
+        5. Home Page Level Picking: To chose the level the user is visually guided by both the green playing board and the black bar above the green board saying "Chose Your Level:". On the green board there are three red buttons and one blue (what is a button)
 * Asked a Data Scientist friend to review the pages and the games responsiveness often they had no comments on improvements that could be made to the website in the timeframe.
-### ***Manual Testing:***
 * During testing, I used three browsers to ensure cross-compatibility. The browsers used were:
   1. Chrome
   2. Firefox  
