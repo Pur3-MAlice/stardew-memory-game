@@ -17,8 +17,7 @@ SITE OVERVIEW
         * [*Typography*](#typography)
 1. [**Universal Features**](#universal-features)
     * [***Header Element***](#header-element)
-        * [*Logo*](#logos)
-        * [*Nav Bar*](#nav-bar)
+        * [*Nav Button*](#nav-button)
     * [***Hero Image***](#hero-image)
     * [***Footer***](#footer)
 1. [**Page Content Features**](#page-content-features)
@@ -47,31 +46,30 @@ SITE OVERVIEW
 
 ## **Planning**
 ### **Target Audiences:**
-* Adults who enjoy playing the sub genre of video games called “cosy games” but don’t want anything too taxing.
-* Fans of the Stardew Valley. Which Is A Cult Cosy Game With A Large Player Base
+* Adults who enjoy playing the sub genre of video games called “cosy games” but don’t want anything too mentally taxing.
+* Fans of the Stardew Valley. Which Is A Cult Cosy Game With A Large Player Base.
 * Casual Gamers who would like to spend time away from their main game and spend some time on a semi-concentrated task.
 * Fans of nostalgic kids cards games like Snap or Uno. 
 ### **User Stories:**
 * I as a user, want to be able to play a cute/nosalgic game with the ability to go to harder levels.
 * I as a user, want to be able to track the progress of each round in some way.
-* I as a user, want to be able to find a clear explanation of the game rules and how to play.
-* As a user, I want to be able to navigate my way to resources easily.
-* As a user, I want to learn more about the inspiration game.
+* I as a user, want to be able to find explanation of the game rules and how to play.
+* As a user, I want to be able to navigate my way to resources.
+* As a user, I want to learn more about the inspiration game (Stardew Valley) and possibly find links to more infomation.
 ### **Aims:**
 * To provide a cute and nostalgic memory game.
 * Be accessible to the visually impaired with good contrasts. 
 * Provide a “how-to-play” section.
 * Link to inspiration source 
-* keyboard functions?
 * To be an enjoyable distraction to fill the user's time.
 ### **How to Achieve:**
 * The game will be free to use, and no sign up required.
 * Site will use imagery and wording from the theme source and possible sound effects?
 * Ensuring the use of semantic elements, alternate text, and aria labels where appropriate.
 * The landing page will be the main menu. Access to the main menu can also be done throughout the game with the Nav button. This menu will contain links back to:
-   1. Game rules.
-   2. Game options menu.
-   3. Keyboard Play?
+   1. How to Play
+   2. About the source Material (Stardew Valley)
+   3. Home 
 * After each move, the relevant tally will be modified. Overall game play will be scored.
 ### **Wireframes**
 * Below are some screengrabs of the desktop and mobile wireframes made for this project.
@@ -107,23 +105,27 @@ SITE OVERVIEW
 * Whilst doing research into what best fonts to use - I was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible due to blur. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file.
 ## **Universal Features**
 ### **Header Element**
-#### *Logo*
-* 
-#### *Nav Bar*
+#### *Nav Button*
 * I wanted to add a Navigation button at the top-right of my website so the user could easily get from one page to another. This nav button used the traditional three stacked lines which is a colloqiual "menu" icon in websites. The icon was taken from fontawesome. 
 * The hover feature was employed to do the drop down function and highlight the links the user would be going to once the hover over on the button had been activated.
-![Nav Button]()
+![Nav Button](/docs/screenshots/navbutton.jpg)
+![Nav Button Hover](/docs/screenshots/navbutton-hover.jpg)
 ### **Hero Image**
 * The Hero Image, or Background Image for this website is the loading screen of the actual game itself. Screenshot below. All images were taken from the Games Wiki "Stardew Valley Wiki", which states that the content is available under Creative Commons Attribution-NonCommercial-ShareAlike unless otherwise noted. [Creative Commons Link](https://creativecommons.org/licenses/by-nc-sa/3.0/). Due to the fact this will be a none profitable game and is free to use, all images can be freely copied, redistributed, modified and used. 
 ![Background Image](/assets/images/stardew-bg.jpg)
 ### **Footer**
 * For good UX I kept with a traditional website footer of social media links. However to break from the footer "bar" i decided to just use the footer to hold the social media links and imply that the footer was see-through. This clean look show the background image behind and implies that the game board is the interactive part of the site. Hvaing the footer be more subtle lends to an elegant look. This is done throughout the website and a key part of the continuity of the website.
-* There is also a copyright - because I liked the addition and becasue the images were taken from the Stardew Valley game which was created by Concerned Ape themselves, so i felt this needed to be made clear that the images are not my own.
-![Footer image]()
+* There is also a copyright - because I liked the addition and becasue the images were taken from the Stardew Valley game which was created by Concerned Ape themselves, so i felt this needed to be made clear that the images are not my own. 
+![Footer image](/docs/screenshots/footer.jpg)
 ## **Page Content Features**
-### **About Content**
-* 
-![About Image]()
+### **Home Page content**
+* The main home page features that are not universal are the home board and the score board.
+* The Home Baord is mean to simulate a classic game opening page of "chose your difficulty" and to ensure that you ant start playing without chosing a difficulty setting. It was styled to emulate a classic game playing table with the green velvet, and also to highlight the colourful themes of the insparation game. The board was also created to ensure that the feautres of this page were not distracted by the background which i think has been achieved especailly with the centering. The colours of the board also tie in nicly with the background colours which was done for pure estheic reasons.
+* The Score board is meant to be highlighting the high scores logged by the brower. And place them somewhere obvious. It seemed natural to have them at the top left, which is usally where highscore boards tend to be on classic 8-bit games. 
+
+(SCORE BOARD IMAGE)
+(HOME BOARD IMAGE)
+![About Image IMAGE HERE]()
 
 ### **EASY page Content**
 
