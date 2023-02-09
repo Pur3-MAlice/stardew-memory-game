@@ -1,9 +1,10 @@
+//All code references in comments have their links in the README.md
 //Inital score set
 let errors = 0;
 let matches = 0;
 let points = 0;
 
-//List of iridium Level cards
+//List of iridium Level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 let cardList = [
     "/assets/images/dustsprite",
     "/assets/images/frostslime",
@@ -24,6 +25,7 @@ const rows = 4;
 const columns = 5;
 let firstCard;
 let secondCard;
+let iridiumScore;
 
 /** 
  * Function to shuffle cards and start the game as soon as window is loaded
@@ -31,10 +33,10 @@ let secondCard;
 window.onload = function() {
     shuffleCards();
     startGame();
-    iridiumScore = localStorage.getItem('iridiumScore')
+    iridiumScore = localStorage.getItem('iridiumScore');
     localStorage.getItem('iridiumScore');
     document.getElementById("iridiumcount").innerText = iridiumScore;
-}
+};
 
 /**
  * Function to shuffle the cardList and create pairs by duplicating the array
@@ -65,8 +67,8 @@ function startGame() {
             row.push(cardImg); 
             //create the cards images and add them to the board when the window is loaded
             const card = document.createElement("img");
-            card.id =r.toString() + "-" + c.toString();
-            card.src = cardImg + ".jpg"
+            card.id =r.toString() + "-" + c.toString(); // inspired by coding from Kenny Yip Coding the toString stuff esp
+            card.src = cardImg + ".jpg";
             card.classList.add("iridiumcard");
             card.addEventListener("click", selectCard);
             document.getElementById("iridiumboard").append(card);
@@ -74,7 +76,7 @@ function startGame() {
         board.push(row);
     }
     console.log(board);
-    setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg
+    setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg. Time out inspired by Code with Ania Kubów
 }
 
 /**
@@ -84,7 +86,7 @@ function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             const card = document.getElementById(r.toString()+ "-" + c.toString());
-            card.src = "/assets/images/back.jpg"
+            card.src = "/assets/images/back.jpg";
         }
     }
 }    
@@ -93,7 +95,7 @@ function hideCards() {
  * Function to select two cards if the card value includes "back" (card values need resetting after this is called)
  */
 function selectCard() {
-    if (this.src.includes("back")) {
+    if (this.src.includes("back")) {// function here inspired by coding from Kenny Yip Coding and Code with Ania Kubów the parseInt stuff esp
         if (!firstCard) {
             firstCard = this;
             const coords = firstCard.id.split("-");
@@ -117,8 +119,8 @@ function selectCard() {
 function update() {
     // if the cards aren't a match then flip and restart selectCards and adjust scores
     if (firstCard.src != secondCard.src) {
-        firstCard.src ="/assets/images/back.jpg"
-        secondCard.src ="/assets/images/back.jpg"
+        firstCard.src ="/assets/images/back.jpg";
+        secondCard.src ="/assets/images/back.jpg";
         errors += 1;
         points -= 1;
         document.getElementById("errorcount").innerText = errors;

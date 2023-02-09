@@ -3,15 +3,15 @@
  * Then populate appropriate field with highest score.
  */
 window.onload = function() {
-    silverScore = localStorage.getItem('silverScore')
+    silverScore = localStorage.getItem('silverScore');
     localStorage.getItem('silverScore');
     document.getElementById("silvercount").innerText = silverScore;
 
-    goldScore = localStorage.getItem('goldScore')
+    goldScore = localStorage.getItem('goldScore');
     localStorage.getItem('goldScore');
     document.getElementById("goldcount").innerText = goldScore;
 
-    iridiumScore = localStorage.getItem('iridiumScore')
+    iridiumScore = localStorage.getItem('iridiumScore');
     localStorage.getItem('iridiumScore');
     document.getElementById("iridiumcount").innerText = iridiumScore;
 
@@ -22,7 +22,7 @@ window.onload = function() {
     silverLevel.onclick = pickSilverLevel;
     goldLevel.onclick = pickGoldLevel;
     iridiumLevel.onclick = pickIridiumLevel;
-}
+};
 
 /**
  * Functions to chose the level diffiulty

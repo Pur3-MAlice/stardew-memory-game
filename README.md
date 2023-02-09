@@ -208,7 +208,7 @@ Stardew Valley Memory Game is a nostaligc card fipping/matching game based on th
 ## **Credits**
 ### **References**
 * Whilst I did try to deviate as much as possible, this project was influenced by the reaserch I did before starting this project.
-* Before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. Whilst no code was directly taken from these other projects and was all typed and built by me, I can say that my research did influence how I built the project initially - however strong deviations were taken after my research and the initial build. (Notable mentions: [Code with Ania Kubów](https://www.youtube.com/@AniaKuboww), [Kenny Yip Coding](https://www.youtube.com/@KennyYipCoding), [CodingNepal](https://www.youtube.com/@CodingNepal), [Coding Artist](https://www.youtube.com/@CodingArtist) these were the most helpful and inflential, but not the only, videos I watched during my research phase.) 
+* Before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. I can say that my research did influence how I built the project initially - however strong deviations were taken after my research and the initial build, and some code was taken and modified for my project especially when it came to parseInt function and toString. This code was taken from and mashed with/amalgamted to fit my purpose from Kenny Yip Coding and Code with Ania Kubow. These are from their YouTube follow through tutorials where they acitvely encourage people to follow along. (Notable mentions: [Code with Ania Kubów](https://www.youtube.com/@AniaKuboww), [Kenny Yip Coding](https://www.youtube.com/@KennyYipCoding), [CodingNepal](https://www.youtube.com/@CodingNepal), [Coding Artist](https://www.youtube.com/@CodingArtist) these were the most helpful and inflential, but not the only, videos I watched during my research phase.) 
 * I did rely on StackOverflow, W3schools, CSS-TRICKS and MDN web docs for general references and problem solving throughout the project.
 
 ### **Content and Media**
@@ -292,7 +292,7 @@ Below is a list of bugs I found during the development process. A lot of the bug
         * For ease when doing the intial build of the project Isimply added links to the home board that would take you to the appropriate level. But I wanted this to be a choice and then for you to click play and it take you to the choice. This did not work depsite my many attempts. 
     * ***Solution Used:*** 
         * Turned the links instead into radio buttons and then styled them! Added some Javascript that mean that if a button with a certain id was clicked then the div with the id "play" would have it's inner HTML populated with an appropriate a href link and that could be clicked. I then styled this so they all looked like buttons and would react when the click occurs with CSS.
-   1. **Intended Outcome** - Create columns/ rows and have indexes where this will go.
+1. **Intended Outcome** - Create columns/ rows and have indexes where this will go.
    * ***Issue Found:*** 
         * This issue didn't turn up on screen as the board hadn't yet been populated with the cards nor had the cards really been built at this point Nor could we visually see the coloumns or rows at any point. However this error was caught in the console. If this hadn't have been solved then any addition underneath this error would have not work the way it was intended to.
     * ***Solution Used:*** 
@@ -325,6 +325,9 @@ Below is a list of bugs I found during the development process. A lot of the bug
 #### ***CSS*** - https://jigsaw.w3.org/css-validator/
 * 
 ![CSS badge]()
+
+#### ***Javascript*** - https://jshint.com/
+* Code passes through only stating that console and alert are undefined variables. Despite that these aren't variables and that these words have functions inside Javascript.
 ### **Lighthouse Scores**
 ### **Test conditions**
 * I performed the lighthouse tests in incognito mode. I ran the tests for both mobile and desktop.
