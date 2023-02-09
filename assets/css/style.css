@@ -1,6 +1,5 @@
-/* Universal Styling */
+/* Universal Styling & Styling that Occurs on all pages*/
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+Syloti+Nagri&family=VT323&display=swap');
-
 body {
     background: url(/assets/images/stardew-bg.jpg);
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
@@ -34,7 +33,7 @@ h1 {
     right: 2px;
 }
 
-.highscore {
+#highscore {
     background-color: black;
     font-family: 'DotGothic16', sans-serif;
     letter-spacing: 4px;
@@ -44,7 +43,7 @@ h1 {
     text-align: center;
 }
 
-/* Drop Button Styling some below taken from Stack Overflow*/ 
+/* Drop Button Styling some below taken from Stack Overflow (Referenced in README.md) */ 
 .dropbutton {
     background-color: #0E4A0E;
     color: #fff;
@@ -85,7 +84,7 @@ h1 {
     background-color: #508a50;
 }
 
-/* Buttons some of the styling below inspired by a Codepen (referenced in README.md*/
+/* Buttons some of the styling below inspired by a Codepen (referenced in README.md)*/
 #social-buttons, #social-buttons-text {
     display: inline-flex;
     align-items: center;
@@ -126,7 +125,6 @@ a:visited {
     width: 175px;
     height: 80px;
     font-size: 17px;
-    text-align: center; 
     text-transform: uppercase;
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
     background-color: #68190a;
@@ -142,21 +140,16 @@ a:visited {
     box-shadow: 0px 15px 20px rgba(140, 28, 4, 0.8);
 }
 
-
 .leftbutton {
     position: fixed;
     left: 12.5%;
     top: 40%;
 }
 
-#next {
-    color: #fff;
+.rightbutton {
     position: fixed;
     right: 12.5%;
     top: 40%;
-    background: #8c1c04;
-    padding: 30px;
-    border-radius: 10px;
 }
 
 /* Home Page Styling */
@@ -171,6 +164,7 @@ a:visited {
     flex-direction: column;
     padding-top: 20px;
 }
+
 #play {
     background-color: #3A7DA8;
     color: #3A7DA8;
@@ -223,7 +217,7 @@ input:checked + label {
     position: absolute;
 }
 
-/* About Stardew Styling*/
+/* About Stardew Styling */
 #about-board {
     height: 580px;
     width: 800px;
@@ -234,18 +228,18 @@ input:checked + label {
     color: #fff;
 }
 
-#about-board p{
+#about-board p {
     margin: 10px 10px 10px 25px;
     text-align: left;
     font-size: 14px;
 }
 
-#about-board a{
+#about-board a {
     color: #fff;
     font-size: 14px;
 }
 
-#about-board > h3{
+#about-board > h3 { 
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -253,7 +247,7 @@ input:checked + label {
     text-align: left;
 }
 
-/* How to & About Stardew Styling*/
+/* How to & About Stardew Styling */
 #howto-board {
     height: 580px;
     width: 800px;
@@ -271,7 +265,7 @@ input:checked + label {
     padding: 10px 12px 10px 12px;
 }
 
-#howto-board > h3{
+#howto-board > h3 {
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -289,14 +283,6 @@ input:checked + label {
     flex-wrap: wrap;
     background-color: #0E4A0E;
     border: 10px solid #7F8A2E;
-}
-
-#errors, #matches, #points {
-    background-color: #0E4A0E;
-    display: inline-block;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 2.5rem 7em 11.5px 7rem;;
 }
 
 .iridiumcard {
@@ -341,4 +327,12 @@ input:checked + label {
     margin: 6px;
     border-radius: 8px;
     cursor: pointer
+}
+
+#errors, #matches, #points {
+    background-color: #0E4A0E;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 2.5rem 7em 11.5px 7rem;;
 }

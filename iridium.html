@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVASCRIPT MEMORY CARD GAME</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="/assets/javascript/iridium.js"></script>
-
 </head>
 
-
 <body>
-    <div class="dropdown">
+    <div class="dropdown"> <!--Dropdown Nav Menu code inspired by Stack Overflow (referenced in README.md)-->
         <button class="dropbutton"><i class="fa-solid fa-bars"></i></button>
         <div class="drop-content">
             <a href="index.html">Home</a>
@@ -23,40 +20,47 @@
 
     <h1>STARDEW VALLEY MEMORY GAME</h1>
 
-    <div id="highscore">
+    <div id="highscore"> <!--Highestscore banner for local.storage-->
         <h2>Highest Score Iridium: 
             <span id="iridiumcount">0</span>
         </h2>
     </div>
 
-    <div class="leftbutton">
+    <div class="leftbutton"> <!--Nav Buttons-->
         <button class="button">
           <a href="gold.html">Previous Level</a>
         </button>
     </div>
 
-    <div id="iridiumboard"></div>
-    <div id="next"><a href="iridium.html">Play Again?</a></div>
+    <div id="iridiumboard"></div> <!--Div for the board that wil be built in CSS and Javascript and then populated with Cards by JS-->
+
+    <div class="rightbutton"> <!--Nav Buttons-->
+        <button class="button">
+          <a href="iridium.html">Play Again?</a>
+        </button>
+    </div>
 
     <div id="counters">
+    <!--Div to keep all Empty point counters to be interacted with by JavaScript-->
       <div id="matches"><h2>Matches: <span id="matchcount">0</span></h2></div>
       <div id="points"><h2>Points: <span id="pointcount">0</span></h2></div>
       <div id="errors"><h2>Errors: <span id="errorcount">0</span></h2></div>
     </div>
 
-    <div class= "social-buttons">
+    <div id="social-buttons">
+    <!--Links to Social Buttons-->
         <a href="https://github.com/Pur3-MAlice" alt="Link to new tab: Alice Ford's Git Hub" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://codepen.io/Pure_MAlice" alt="Link to new tab: Alice Ford's Code Pen" target="_blank"><i class="fa-brands fa-codepen"></i></a>
     </div>
-
 </body>
 
-
 <footer>
+<!--Copyright Disclaimer-->
     <a href="https://www.stardewvalley.net/author/concernedape/" alt="Link out to Developer Blog of ConcernedApe. link open in new tab" target="_blank"><img id="copyrightimg" src="/assets/images/developed_by_copyright.gif" alt="ConcernedApe copyright"></a>
     <div id="disclaimer">Disclaimer: all images belong to ConcernedApe and Stardew Valley.</div>
 </footer>
+<!---JavaScript-->
+<script src="/assets/javascript/iridium.js"></script>
 <!---Font Awesome Script-->
 <script src="https://kit.fontawesome.com/9096438b6b.js" crossorigin="anonymous"></script>
-
 </html>
