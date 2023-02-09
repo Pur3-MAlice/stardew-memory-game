@@ -173,23 +173,42 @@ Stardew Valley Memory Game is a nostaligc card fipping/matching game based on th
 ### **Gold Page Content**
 * The one feature that differs on the Gold Page is that the universal features (on all pages bar the home page) of the Left Button and Right Button go to the game play levels "above" and "below" it in difficulty respectivley. So Next Level (Right Button) goes to Iridium and Previous Level (Left Button) goes to Silver.
 
-    ![The Prev Button](/docs/screenshots/prev-level.jpg) ![The Play Again Button](/docs/screenshots/playagain-button.jpg)
+    ![The Prev Button](/docs/screenshots/prev-level.jpg) ![The Next Button](/docs/screenshots/next-level.jpg)
 
 ### **Iridium Page Content**
-* The Left and Right button are as such on th Iridium Page and each goes to the respective page 
+* The Left and Right button are as such on the Iridium Page and each goes to the respective page .
+
+    ![The Prev Button](/docs/screenshots/prev-level.jpg) ![The Play Again Button](/docs/screenshots/playagain-button.jpg) 
+
+### **Silver Page Content**
+* The Left and Right button are as such on the Silver Page and each goes to the respective page.
 
     ![The Home Button](/docs/screenshots/home-button.jpg) ![The Next Button](/docs/screenshots/next-level.jpg)
 
-### **Silver Page Content**
-* The Left and Right button are as such on th Silver Page and each goes to the respective page 
+### **How To Play Content**
+* The Left and Right button are as such on the How To Play Page and each goes to the respective page.
+
+    ![The Home Button](/docs/screenshots/home-button.jpg) ![The Stardew Button](/docs/screenshots/stardew-button.jpg)
+
+### **About Stardew Valley Content**    
+* The Left and Right button are as such on the About Stardew Page and each goes to the respective page.
+
+    ![The Home Button](/docs/screenshots/home-button.jpg) ![The How To Button](/docs/screenshots/how-to-button.jpg)
 
 ## **Future Improvements**
 * Add images to the level choice buttons for a bit of flair.
 * Add sounds effects for when you chose card, get a match, new highscore, get a non-match, finish round, start game.
+* Update the Nav Bar to include a tab at the botton of the list to take you back to the page you came from.
+* Add a small animation to the unmatched pairs - like a small animated shake.
+* Add how to play button to the home screen below the play button so this is easily accesible to the user and they don't have to actively look for it.
+* Make repatative code such as the "document.getElementById("pointcount").innerText = points;" into a function for future proofing and cleaner better coding practices. 
+* Add another level: Bronze Level
+* Make the Iridium Level harder after each attempt by decreasing the glimpse feature (hideCards) to 300 milliseconds from 500 milliseconds after first round. This could also be appleid to the other levels.
+* Add in Keyboard functions to make the game playable with the Arrow keys/WASD keys and the Enter key.
 ## **Credits**
 ### **References**
 * Whilst I did try to deviate as much as possible, this project was influenced by the reaserch I did before starting this project.
-* Before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. Whilst no code was directly taken from these other projects and was all typed and built by me, I can say that my research did influence how I built the project initially - hwoever strong deviations were taken after my research and the initial build. (Notable mentions: [Make MEMORY GAME in JavaScript, HTML and CSS for your portfolio](https://www.youtube.com/watch?v=tjyDOHzKN0w)), [Build A Memory Card Game in HTML CSS & JavaScript](https://www.youtube.com/watch?v=DABkhfsBAWw), [Memory Game Javascript Project | HTML, CSS, Javascript](https://www.youtube.com/watch?v=dqqxkrKhfS4) these were the most helpful but weren't the only videos I watched during my research phase.)
+* Before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. Whilst no code was directly taken from these other projects and was all typed and built by me, I can say that my research did influence how I built the project initially - however strong deviations were taken after my research and the initial build. (Notable mentions: [Code with Ania Kubów](https://www.youtube.com/@AniaKuboww), [Kenny Yip Coding](https://www.youtube.com/@KennyYipCoding), [CodingNepal](https://www.youtube.com/@CodingNepal), [Coding Artist](https://www.youtube.com/@CodingArtist) these were the most helpful and inflential, but not the only, videos I watched during my research phase.) 
 * I did rely on StackOverflow, W3schools, CSS-TRICKS and MDN web docs for general references and problem solving throughout the project.
 
 ### **Content and Media**
