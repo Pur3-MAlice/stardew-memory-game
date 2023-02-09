@@ -1,6 +1,6 @@
-# **JAVASCRIPT PROJECT**
+# **Stardew Valley Memory Game**
 ## **Site Overview**
-SITE OVERVIEW
+Stardew Valley Memory Game is a nostaligc card fipping/matching game based on the images and source material of the cult game Stardew Valley. The main aim of the website is provide a realxing and entertaining game that users can go up or down in difficulty - the games shouldn't be so difficult that the experience is stressful. The experience of this site should be happy calm and relaxed whilst player are able to keep track of their highest scores. (*Some of the images used in this README.md are slightly out of date and the areas have been since modified - however these changes are minor enough not to warrant new screenshots)
 ![Responsive Screenshot]
 ## Table of Contents:
 1. [**Site Overview**](#site-overview)
@@ -46,14 +46,14 @@ SITE OVERVIEW
 ## **Planning**
 ### **Target Audiences:**
 * Adults who enjoy playing the sub genre of video games called “cosy games” but don’t want anything too mentally taxing.
-* Fans of the Stardew Valley. Which Is A Cult Cosy Game With A Large Player Base.
+* Fans of the Stardew Valley. Which is a cult cosy game with a large player base.
 * Casual Gamers who would like to spend time away from their main game and spend some time on a semi-concentrated task.
 * Fans of nostalgic kids cards games like Snap or Uno. 
 ### **User Stories:**
 * I as a user, want to be able to play a cute/nosalgic game with the ability to go to harder levels.
 * I as a user, want to be able to track the progress of each round in some way.
 * I as a user, want to be able to find explanation of the game rules and how to play.
-* As a user, I want to be able to navigate my way to resources.
+* As a user, I want to be able to navigate the site.
 * As a user, I want to learn more about the inspiration game (Stardew Valley) and possibly find links to more infomation.
 ### **Aims:**
 * To provide a cute and nostalgic memory game.
@@ -96,14 +96,16 @@ SITE OVERVIEW
 ![mobile gameplay page](/docs/wireframes/wireframes-gameplay-tablet.jpg)
 
 ### **Design**
-* The basis of the design theme for this game came from the cult classic game of "Stardew Valley" a farming sim that was relised in 2014. This game has a huge following and has sold over 10 million copies. The bright and nostalgic pixel art is pleasing to look at and the icons in the game lend themselves to this type of spin-off game. It also has lots of groupable icons that can be used as card faces. Plus the bright colours made to create an intresting colour pallette with high contrast.
-* The pixalted art style lended itself to this tyoe of game as when scaling up or down they don't lose as much definition as regular image,
+* The basis of the design theme for this game came from the cult classic game of "Stardew Valley" a farming sim that was relised in 2014. This game has a huge following and has sold over 10 million copies. The bright and nostalgic pixel art is pleasing to look at and the icons in the game lend themselves to this type of spin-off game. also has lots of groupable icons that can be used as card faces. Plus the bright colours made to create an intresting colour pallette with high contrast.
+* The pixalted art style lended itself to this tyoe of game as when scaling up or down they don't lose as much definition as regular image.
 #### *Color Scheme*
-* I used the loading image (seen below) and added in other complmentary colours to create a colour pallete and then used . I am planning to only use #fff and #000 for writing to increase asseibility.
+* I used the background image (seen below) and added in other complmentary colours to create a colour pallete and then used . I am planning to only use #fff and #000 for writing to increase asseibility.
+* By using the background image to build the colour pallette I set up the ability to create a cohesive aesthetic, which is part of a good UX.
+* The Visual Identity of this website should be bright, exciting but not stressful. The background colours should only highlight this and the actual cards should be the center of attention. Hence the colourful but muted tones.
 
 ![Contrast](/docs/screenshots/contrast-grid.png)
 #### *Typography*
-* Whilst doing research into what best fonts to use - I was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible due to blur. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file.
+* Whilst doing research into what best fonts to use - I was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible due to blur. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file. However the pixel fonts were best suited to the aesthetic of the page, so they were used when larger fonts were appropriate so as to not affect readability.
 ## **Universal Features**
 ### **Header Element**
 #### *Nav Button*
@@ -122,6 +124,8 @@ SITE OVERVIEW
 * There is also a copyright - because I liked the addition and becasue the images were taken from the Stardew Valley game which was created by Concerned Ape themselves, so i felt this needed to be made clear that the images are not my own. 
 
 ![Footer image](/docs/screenshots/footer.jpg)
+
+![Copyright/Disclaimer](/docs/screenshots/disclaimer.jpg)
 ## **Page Content Features**
 ### **Home Page content**
 * The main home page features that are not universal are the home board and the score board.
@@ -135,7 +139,31 @@ SITE OVERVIEW
 
 ![Home Page Score Board](/docs/screenshots/scoreboard.jpg)
 
-### **Silver Page Content**
+### **Game Play Page Content**
+* The game play content of the Silver, Gold and Iridium pages is pretty much the same. With minor deviations which are detailed below. However due to their similarities I will go over the main shared features here:
+    1. The Counters. There are three counting boxes on each of the game play pages - Matches, Points and Errors. These boxes are not interactive, however they will chnage their count/ number value depending on your game play. So far each matched pair the Matches box goes up by 1, and the Points box goes up by 2. But for each incorrect pair the Errors box will then go up by one and the points will go down by 1. So by the end of your match your Matches should be equal to half of the cards on the board. And your points should be (Matches x 2) - Errors. 
+
+    ![The Counters](/docs/screenshots/counters.jpg)
+
+    2. The Highscore Bar. This overall score from above should then appear in the "Highscore Bar". This is another Feature that each of the game play pages have. This will map the highest score you have reached on that level so far (This also then feeds the score back to the Home Page's Score Board).
+
+    ![The Highscore Bar](/docs/screenshots/highscore-bar.jpg)
+
+    3. The Play Board. Another feature of all the game play pages is the game board itself. The same colour scheme and similar width x heights maintains site consistency and UX. Below is what the Silver Page game board looks like (the others are documented below whilst showing other features.)
+
+    ![The Play Board](/docs/screenshots/highscore-silver.jpg)
+
+    4. The Non-Match Flip. The nature of a matching card game is memory. So if you do get a match wrong then you will only get a small chance to see both cards before they revert back to their orginal state (the purple stars as shown above). The feature here is that for each incorrect pair on all game play pages the player will get 1000 milliseconds to look and memorise card positions. Then this will also effect the errors and points count as explained above.
+
+    ![The Non-Match Flip](/docs/screenshots/unmatched-pair.jpg)
+
+    5. The Match. When the players get a match we want the cards to stay 'turned' as it were. Below you can see three pairs from the Iridium Level matched and staying turned over. This is the same for all game play pages - and this will change The Counters as explained above. 
+
+    ![The Match Pair](/docs/screenshots/matched-pairs.jpg)
+
+    6. The Card Glimpse. As pointed out when discussing the Non-Matches, this is a memory game first and formost. So we do need to give a bit of a hit where to start when the page loads. Therefore I have implemented a feature which allows the user to see all off the cards for 500 milliseconds before the hideCards function is called and turns the img into the back img. Fun Fact! The below screenshot was actaully taken during this 500 millisecons and not once I had completed the board, which would have been a better idea, but I did get the picture.
+
+    ![The Card Glimpse](/docs/screenshots/card-glimpse.jpg)
 
 ### **Gold Page Content**
 
@@ -218,7 +246,7 @@ Below is a list of bugs I found during the development process. A lot of the bug
 ![CSS badge]()
 ### **Lighthouse Scores**
 ### **Test conditions**
-* 
+* I performed the lighthouse tests in incognito mode. I ran the tests for both mobile and desktop.
 #### ***Desktop Version:***
 * 
 
