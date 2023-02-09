@@ -1,4 +1,3 @@
-
 /** 
  * Function to call the local.storage from the browser (if game already played in browser).
  * Then populate appropriate field with highest score.

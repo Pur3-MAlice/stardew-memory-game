@@ -4,7 +4,7 @@ let matches = 0;
 let points = 0;
 
 //List of silver level cards
-let cardList = [
+const cardList = [
     "/assets/images/elliot",
     "/assets/images/haley",
     "/assets/images/leah",
@@ -14,8 +14,8 @@ let cardList = [
 //Variables for the Pairs, cards, rows & coloumns and board. The build of the game
 let pairSet;
 let board = [];
-let rows = 2;
-let columns = 4;
+const rows = 2;
+const columns = 4;
 let firstCard;
 let secondCard;
 
@@ -39,7 +39,7 @@ function shuffleCards() {
 
     //shuffle the cards
     for(let i = 0; i < pairSet.length; i++) {
-        let j = Math.floor(Math.random() * pairSet.length); //randomise 
+        const j = Math.floor(Math.random() * pairSet.length); //randomise 
         let temp = pairSet[i];
         pairSet[i] = pairSet[j];
         pairSet[j] = temp;
@@ -53,7 +53,7 @@ function shuffleCards() {
 function startGame() {
     //arrange the board in 4x2 for the silver level
     for (let r = 0; r < rows; r++) {
-        let row = [];
+        const row = [];
         for (let c= 0; c < columns; c++) {
             let cardImg = pairSet.pop();
             row.push(cardImg); 
@@ -78,7 +78,7 @@ function startGame() {
 function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
-            let card = document.getElementById(r.toString()+ "-" + c.toString());
+            const card = document.getElementById(r.toString()+ "-" + c.toString());
             card.src = "/assets/images/back.jpg" 
         }
     }
@@ -91,15 +91,15 @@ function selectCard() {
     if (this.src.includes("back")) {
         if (!firstCard) {
             firstCard = this;
-            let coords = firstCard.id.split("-");
-            let r = parseInt(coords[0]);
-            let c = parseInt(coords[1]);
+            const coords = firstCard.id.split("-");
+            const r = parseInt(coords[0]);
+            const c = parseInt(coords[1]);
             firstCard.src = board[r][c] + ".jpg";
         } else if (!secondCard && this != firstCard) { //Make sure the first card clicked and second card clicked aren't the same card
             secondCard = this;
-            let coords = secondCard.id.split("-");
-            let r = parseInt(coords[0]);
-            let c = parseInt(coords[1]);
+            const coords = secondCard.id.split("-");
+            const r = parseInt(coords[0]);
+            const c = parseInt(coords[1]);
             secondCard.src = board[r][c] + ".jpg";
             setTimeout(update, 1000); //if cards aren't a match then wait one second and call the update function
         }

@@ -126,22 +126,24 @@ SITE OVERVIEW
 ### **Home Page content**
 * The main home page features that are not universal are the home board and the score board.
 * The Home Baord is mean to simulate a classic game opening page of "chose your difficulty" and to ensure that you ant start playing without chosing a difficulty setting. It was styled to emulate a classic game playing table with the green velvet, and also to highlight the colourful themes of the insparation game. The board was also created to ensure that the feautres of this page were not distracted by the background which i think has been achieved especailly with the centering. The colours of the board also tie in nicly with the background colours which was done for pure estheic reasons.
-* The Score board is meant to be highlighting the high scores logged by the brower. And place them somewhere obvious. It seemed natural to have them at the top left, which is usally where highscore boards tend to be on classic 8-bit games. 
 
 ![Home Board Without Level Chosen](/docs/screenshots/homeboard.jpg)
 
 ![Home Board With Level Chosen](/docs/screenshots/level-chosen.jpg)
 
+* The Score board is meant to be highlighting the high scores logged by the brower. And place them somewhere obvious. It seemed natural to have them at the top left, which is usally where highscore boards tend to be on classic 8-bit games. 
+
 ![Home Page Score Board](/docs/screenshots/scoreboard.jpg)
 
-### **EASY page Content**
+### **Silver Page Content**
 
-### **HARD Page Content**
+### **Gold Page Content**
 
-### **EXPERT Page Content**
+### **Iridium Page Content**
 
 ## **Future Improvements**
-* 
+* Add images to the level choice buttons for a bit of flair.
+* Add sounds effects for when you chose card, get a match, new highscore, get a non-match, finish round, start game.
 ## **Credits**
 ### **References**
 * Whilst I did try to deviate as much as possible, this project was influenced by the reaserch I did before starting this project.
@@ -187,6 +189,7 @@ During the development process, I was manually testing in the following ways:-
 * I also consistently used the devtools to simulate different screen sizes/devices from 320px up to 2200px in width. 
 * In addition to this, I used the dev tools to simulate different products such as the iPhone XR, iPhone 12 Pro, Samsung Galaxy S8+, iPad Air, iPad Mini, Surface Pro 7 and Nest Hub.
 * I also got friends and my partner to test the site on their own devices - Samsung, Dell Laptops, Self-built desktops and Apple products. 
+
 ### ***Bugs and Fixes:***
 Below is a list of bugs I found during the development process. A lot of the bugs and fixes where minor enough that temporary editing in the devtools allowed me to find a quick and simple solutions to most of the bugs almost instantly. But here are a few that stumped me enough to write them down.
 1. **Intended Outcome** - For the Nav button to show up in the top right of the screen and dropdown to show the other links to pages,
