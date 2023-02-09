@@ -18,6 +18,10 @@ h1 {
     font-size: 40px;
 }
 
+a {
+    color: #fff;
+}
+
 #disclaimer {
     position: fixed;
     bottom: 0;
@@ -142,6 +146,10 @@ a:visited {
     align-content: center;
     flex-direction: column-reverse;
 }
+
+#break a {
+    padding-top: 15px;
+}
   
 .button:hover {
     background-color: #8c1c04;
@@ -168,7 +176,6 @@ a:visited {
     display: flex;
     background-color: #0E4A0E;
     border: 10px solid #7F8A2E;
-    color: #fff;
     flex-direction: column;
     padding-top: 20px;
 }
@@ -179,7 +186,6 @@ a:visited {
     padding: 8px;
     border-radius: 8px;
     margin: 5.5rem 8em 2.5rem 8rem;
-    font: 20px;
 }
 
 #play a {
@@ -233,17 +239,11 @@ input:checked + label {
     flex-wrap: wrap;
     background-color: #0E4A0E;
     border: 10px solid #7F8A2E;
-    color: #fff;
 }
 
 #about-board p {
     margin: 10px 10px 10px 25px;
     text-align: left;
-    font-size: 14px;
-}
-
-#about-board a {
-    color: #fff;
     font-size: 14px;
 }
 
@@ -263,8 +263,6 @@ input:checked + label {
     flex-wrap: wrap;
     background-color: #0E4A0E;
     border: 10px solid #7F8A2E;
-    color: #fff;
-    font-family: 'Noto Sans Syloti Nagri', sans-serif;
     text-align: left;
     font-size: 22px;
 }
@@ -274,12 +272,10 @@ input:checked + label {
 }
 
 #howto-board > h3 {
-    font-family: 'Noto Sans Syloti Nagri', sans-serif;
     font-size: 24px;
     font-weight: 700;
     margin: 10px 10px 10px 25px;
     text-align: center;
-    color: #fff;
 }
 
 /* Iridium Page Styling */
@@ -303,8 +299,8 @@ input:checked + label {
 
 /* Gold Page Styling */
 #goldboard {
-    height: 500px;
-    width: 355px;
+    height: 465px;
+    width: 340px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -314,7 +310,7 @@ input:checked + label {
 
 .goldcard {
     height: 110px;
-    margin: 5px;
+    margin: 3px;
     border-radius: 8px;
     cursor: pointer
 }
@@ -342,5 +338,159 @@ input:checked + label {
     display: inline-block;
     padding: 8px;
     border-radius: 8px;
-    margin: 2.5rem 7em 11.5px 7rem;;
+    margin: 0.5rem 7em 13px 7rem;
+}
+
+/* Media Qs */
+
+@media (max-width: 1600px) {
+    .leftbutton {
+        left: 8%;
+    }
+    
+    .rightbutton {
+        right: 8%;
+    }
+
+    #social-buttons-text {
+        margin: 9px;
+    }
+
+    #social-buttons {
+        font-size: 36px;
+    }
+    #errors, #matches, #points {
+        margin: 0.5rem 7em 6px 7rem;
+    }
+
+    #counters {
+        margin-bottom: -9px;
+    }
+    
+    #iridiumboard {
+        height: 465px;
+        width: 415px;
+    }
+
+    .iridiumcard {
+        height: 110px;
+        width: 77px;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .leftbutton {
+        left: 2%;
+    }
+    
+    .rightbutton {
+        right: 2%;
+    }
+
+    .button {
+        width: 160px;
+        font-size: 16px;
+    }
+
+    #score-board {
+        width: 22%;
+    }
+
+    #score-board h2{
+        font-size: 20px;
+    }
+
+    #howto-board {
+        height: 540px;
+        width: 550px;
+    }
+
+    #about-board {
+        height: 560px;
+        width: 550px;
+    }
+
+    #howto-board li {
+        font-size: 18px;
+    }
+
+    #about-board h3{
+        font-size: 14px;
+        margin: 5px 0px 8px 10px;
+    }
+
+    #about-board p{
+        font-size: 13px;
+        margin: -7px 0px 10px 10px;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    h1 {
+        font-size: 35px;
+        margin: 20px
+    }
+    #errors, #matches, #points {
+        margin: 12px 40px 19px 40px;
+    }
+
+    #score-board {
+        width: 18%;
+    }
+
+    #score-board h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 32px;
+        margin: 15px
+    }
+
+    .dropbutton {
+        padding: 15px;
+    font-size: 16px;
+    }
+
+    #errors, #matches, #points {
+        margin: 12px 40px 19px 40px;
+    }
+
+    #levelchoice {
+        font-size: 24px;
+        margin-bottom: 0px;
+        width: 500px;
+    }
+
+    #home-board {
+        height: 450px;
+        width: 420px;
+    }
+
+    #score-board {
+        width: 18%;
+        top: 18%;
+    }
+
+    #score-board h2{
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 16px;
+        padding: 8px;
+        margin: 10px 20% -10px 20%;
+    }
+
+    #play {
+        margin: 2.5rem 4rem 2.5rem 4rem;
+    }
+
+    #play a{
+        margin-left: 25%;
+    }
 }
