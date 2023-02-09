@@ -453,7 +453,7 @@ input:checked + label {
 
     .dropbutton {
         padding: 15px;
-    font-size: 16px;
+        font-size: 16px;
     }
 
     #errors, #matches, #points {
@@ -467,7 +467,7 @@ input:checked + label {
     }
 
     #home-board {
-        height: 450px;
+        height: 400px;
         width: 420px;
     }
 
