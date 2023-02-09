@@ -134,6 +134,10 @@ a:visited {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
+
+.button, a {
+    border: 30px;
+}
   
 .button:hover {
     background-color: #8c1c04;

@@ -30,14 +30,17 @@ window.onload = function() {
  * Functions to chose the level diffiulty
  */
 function pickSilverLevel() {
+    console.log("Silver Level Picked");
     document.getElementById('play').innerHTML = `<a href="silver.html" id="play">PLAY</a>`;
 }
 
 function pickGoldLevel() {
+    console.log("Gold Level Picked");
     document.getElementById('play').innerHTML = `<a href="gold.html" id="play">PLAY</a>`;
 }
 
 function pickIridiumLevel() {
+    console.log("Iridium Level Picked");
     document.getElementById('play').innerHTML = `<a href="iridium.html" id="play">PLAY</a>`;
 }
 

@@ -150,8 +150,12 @@ SITE OVERVIEW
 * [JAVASCRIPT GAME]()
 ## **During Development Testing**
 During the development process, I was manually testing in the following ways:-
-1. Manually testing each element for appearance and responsiveness via a simulated live server using an extension in VSCode.
-1. Asked a Data Scientist friend to review the pages and the games responsiveness often they had no comments on improvements that could be made to the website in the timeframe.
+* Manually testing each element for appearance and responsiveness via a simulated live server using an extension in VSCode.
+    * Detailed below is the method in which I test the site for responsiveness and to make sure that it did what was intended. This test was focused on console.log errors ad external links going into a new tab
+        1. Starting on the home page and opening the dev tools to get to the console.log. I ensured that this was a fresh simulated live server. So to ensure that past testing and local.storage wouldn't interfer with this round of manual testing. 
+        2. Home Page External Links: To make sure all external links on this page were working I hovered over and clicked the "Github" "Codepen" & the Disclaimer Icon fixed to the bottom of the screen. The "Github" & "Codepen" were to turn black once hovered over - and they both did. the cursor also turned into a pointer for all three links as intended. Also all three external links opened out into a new tab as intended.
+        3. Home Page Internal Links
+* Asked a Data Scientist friend to review the pages and the games responsiveness often they had no comments on improvements that could be made to the website in the timeframe.
 ### ***Manual Testing:***
 * During testing, I used three browsers to ensure cross-compatibility. The browsers used were:
   1. Chrome
