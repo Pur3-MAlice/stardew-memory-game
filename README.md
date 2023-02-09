@@ -100,6 +100,7 @@ SITE OVERVIEW
 * The basis of the design theme for this game came from the cult classic game of "Stardew Valley" a farming sim that was relised in 2014. This game has a huge following and has sold over 10 million copies. The bright and nostalgic pixel art is pleasing to look at and the icons in the game lend themselves to this type of spin-off game. It also has lots of groupable icons that can be used as card faces. Plus the bright colours made to create an intresting colour pallette with high contrast.
 #### *Color Scheme*
 * I used the loading image (seen below) and added in other complmentary colours to create a colour pallete and then used . I am planning to only use #fff and #000 for writing to increase asseibility.
+
 ![Contrast](/docs/screenshots/contrast-grid.png)
 #### *Typography*
 * Whilst doing research into what best fonts to use - I was struck by the idea to use pixelated fonts for the main title. However this would not look as good in smaller fonts and wouldn't be as accessible due to blur. So I used 'DotGothic16', 'Noto Sans Syloti Nagri', and 'VT323'. Two pixelated fonts and one regular clean lined font - all three were taken from Google Fonts and were imported into the style.css file.
@@ -108,14 +109,18 @@ SITE OVERVIEW
 #### *Nav Button*
 * I wanted to add a Navigation button at the top-right of my website so the user could easily get from one page to another. This nav button used the traditional three stacked lines which is a colloqiual "menu" icon in websites. The icon was taken from fontawesome. 
 * The hover feature was employed to do the drop down function and highlight the links the user would be going to once the hover over on the button had been activated.
+
 ![Nav Button](/docs/screenshots/navbutton.jpg)
+
 ![Nav Button Hover](/docs/screenshots/navbutton-hover.jpg)
-### **Hero Image**
-* The Hero Image, or Background Image for this website is the loading screen of the actual game itself. Screenshot below. All images were taken from the Games Wiki "Stardew Valley Wiki", which states that the content is available under Creative Commons Attribution-NonCommercial-ShareAlike unless otherwise noted. [Creative Commons Link](https://creativecommons.org/licenses/by-nc-sa/3.0/). Due to the fact this will be a none profitable game and is free to use, all images can be freely copied, redistributed, modified and used. 
+### **Background Image**
+* The Background Image for this website is the loading screen of the actual game itself. Screenshot below. All images were taken from the Games Wiki "Stardew Valley Wiki", which states that the content is available under Creative Commons Attribution-NonCommercial-ShareAlike unless otherwise noted. [Creative Commons Link](https://creativecommons.org/licenses/by-nc-sa/3.0/). Due to the fact this will be a none profitable game and is free to use, all images can be freely copied, redistributed, modified and used. 
+
 ![Background Image](/assets/images/stardew-bg.jpg)
 ### **Footer**
 * For good UX I kept with a traditional website footer of social media links. However to break from the footer "bar" i decided to just use the footer to hold the social media links and imply that the footer was see-through. This clean look show the background image behind and implies that the game board is the interactive part of the site. Hvaing the footer be more subtle lends to an elegant look. This is done throughout the website and a key part of the continuity of the website.
 * There is also a copyright - because I liked the addition and becasue the images were taken from the Stardew Valley game which was created by Concerned Ape themselves, so i felt this needed to be made clear that the images are not my own. 
+
 ![Footer image](/docs/screenshots/footer.jpg)
 ## **Page Content Features**
 ### **Home Page content**
@@ -123,9 +128,11 @@ SITE OVERVIEW
 * The Home Baord is mean to simulate a classic game opening page of "chose your difficulty" and to ensure that you ant start playing without chosing a difficulty setting. It was styled to emulate a classic game playing table with the green velvet, and also to highlight the colourful themes of the insparation game. The board was also created to ensure that the feautres of this page were not distracted by the background which i think has been achieved especailly with the centering. The colours of the board also tie in nicly with the background colours which was done for pure estheic reasons.
 * The Score board is meant to be highlighting the high scores logged by the brower. And place them somewhere obvious. It seemed natural to have them at the top left, which is usally where highscore boards tend to be on classic 8-bit games. 
 
-(SCORE BOARD IMAGE)
-(HOME BOARD IMAGE)
-![About Image IMAGE HERE]()
+![Home Board Without Level Chosen](/docs/screenshots/homeboard.jpg)
+
+![Home Board With Level Chosen](/docs/screenshots/level-chosen.jpg)
+
+![Home Page Score Board](/docs/screenshots/scoreboard.jpg)
 
 ### **EASY page Content**
 
