@@ -27,8 +27,7 @@ SITE OVERVIEW
 1. [**Future Improvements**](#future-improvements)
 1. [**Credits**](#credits)
     * [***References***](#references)
-    * [***Content***](#content)
-    * [***Media***](#media)
+    * [***Content and Media***](#content-and-media)
 ## Testing:
 1. [***During Development Testing***](#during-development-testing)
     * [**Manual Testing**](#manual-testing)
@@ -98,6 +97,7 @@ SITE OVERVIEW
 
 ### **Design**
 * The basis of the design theme for this game came from the cult classic game of "Stardew Valley" a farming sim that was relised in 2014. This game has a huge following and has sold over 10 million copies. The bright and nostalgic pixel art is pleasing to look at and the icons in the game lend themselves to this type of spin-off game. It also has lots of groupable icons that can be used as card faces. Plus the bright colours made to create an intresting colour pallette with high contrast.
+* The pixalted art style lended itself to this tyoe of game as when scaling up or down they don't lose as much definition as regular image,
 #### *Color Scheme*
 * I used the loading image (seen below) and added in other complmentary colours to create a colour pallete and then used . I am planning to only use #fff and #000 for writing to increase asseibility.
 
@@ -149,10 +149,11 @@ SITE OVERVIEW
 * Whilst I did try to deviate as much as possible, this project was influenced by the reaserch I did before starting this project.
 * Before starting this project, I did research javascript build of memory card games, for both code inspiration and direction. Whilst no code was directly taken from these other projects and was all typed and built by me, I can say that my research did influence how I built the project initially - hwoever strong deviations were taken after my research and the initial build. (Notable mentions: [Make MEMORY GAME in JavaScript, HTML and CSS for your portfolio](https://www.youtube.com/watch?v=tjyDOHzKN0w)), [Build A Memory Card Game in HTML CSS & JavaScript](https://www.youtube.com/watch?v=DABkhfsBAWw), [Memory Game Javascript Project | HTML, CSS, Javascript](https://www.youtube.com/watch?v=dqqxkrKhfS4) these were the most helpful but weren't the only videos I watched during my research phase.)
 * I did rely on StackOverflow, W3schools, CSS-TRICKS and MDN web docs for general references and problem solving throughout the project.
-### **Content**
-* All images were taken from [Stardew Valley Wiki](https://stardewvalleywiki.com/Stardew_Valley_Wiki) and are used under the 
-### **Media**
-* All images were taken from Pexels.com. WHERE WERE ALL THE IMAGE TAKEN 
+### **Content and Media**
+* All images were taken from [Stardew Valley Wiki](https://stardewvalleywiki.com/Stardew_Valley_Wiki) and are used under the Creative Commons Attribution. This means that this website cannot use any of this imagery for profit and therefore this site and the game are completely free. All art and credit belongs to ConcernedApe (Eric Barone). However I modify the images for fit into card like shapes. 
+* The favicon image is the same as the card.back as was turned into a favicon by this website: [Favicon Generator](https://favicon.io/favicon-converter/0).
+* Google fonts was used for all the font for this project. DotGothic16, Noto Sans Syloti Nagri and VT323. [Google Fonts](https://fonts.google.com/)
+* Font Awesome was used for the Github, Codepen and the Nav Bar (stacked lines icon). [Font Awesome](https://fontawesome.com/)
 ## **Deployment**
 * I deployed the page on GitHub pages via the following procedure: -
 * From the project's repository, go to the Settings tab.

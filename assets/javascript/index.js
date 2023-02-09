@@ -22,7 +22,6 @@ window.onload = function() {
     silverLevel.onclick = pickSilverLevel;
     goldLevel.onclick = pickGoldLevel;
     iridiumLevel.onclick = pickIridiumLevel;
-
 }
 
 /**
