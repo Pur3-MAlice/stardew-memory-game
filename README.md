@@ -262,11 +262,56 @@ Below is a list of bugs I found during the development process. A lot of the bug
         * The hover over function at first did not work, and then also floated over the top of the button instead of droping down below the nav button,
     * ***Solution Used:*** 
         * Chaning the positioning and then the using the float function then got the button to stay in the top right corner. Then I also changed the contents css stylign to display: none and position: absolute instead of relative. This fixed the issue.
- 1. **Intended Outcome** - 
+ 1. **Intended Outcome** - Have local storage of the points at the end of the game.
     * ***Issue Found:*** 
-        * 
+        * Trying to create a local storage function that would hold the value of the points at the end of the game. It didn't work for a long time turns out I wasn't using the set and get function correctly and I was over complicating the code.
     * ***Solution Used:*** 
-        *     
+        * Removed all the code I had just created in my attempts and did a simple set and get with the local storage and it worked!
+ 1. **Intended Outcome** - Have local storage pass the score into the Highest Score Bar and stay their for the browser
+    * ***Issue Found:*** 
+        * The score, once in local storage wasn't passing this infomation into the Highest Score Bar. Whilst I had gotten the HTML to do this. Once i refreshed the page the score would reset but obviously the local storage didn't. This meant that unlike my intentions the local storage wasn't passing this info through, it was coming from my temporary fix.
+    * ***Solution Used:*** 
+        * Realised that the local storage was only being called in the endGame function and then the value in the Highest Score bar was being assigned before it was called. So I moved this to the window.onload to it would be pulled out as soon as the window loaded.     
+ 1. **Intended Outcome** - Have the Highest score Bar only update if the score was larger than the last score
+    * ***Issue Found:*** 
+        * The Highest bar now actually pulling through the score from the local storage was being replaced everytime you completed that level's game. Not only if this was higher than the inital score
+    * ***Solution Used:*** 
+        * Added if statement to only reassign the local storage of 'silverScore" if the points > silverScore. So only if the current points were larger than the intial silverScore value then could that value be changed. 
+ 1. **Intended Outcome** - When second card is clicked that it return the actual card underneath not one that === the first card clicked
+    * ***Issue Found:*** 
+        * When clicking on the cards the second card clicked would always be the same image underneath. Even if I saw this wasn't actaully the case. The code was telling the image to change 
+    * ***Solution Used:*** 
+        * Add a firstCard and secondCard variable and populate the selectCards function and make sure that in the code secondCard wasn't === firstCard but to just check for that.
+ 1. **Intended Outcome** - To be able to click more than one pair of cards 
+    * ***Issue Found:*** 
+        * Couldn't chose more than one pair at all.
+    * ***Solution Used:*** 
+        * After the selectCard function had run through and called the update function. It needed to set the firstCard and secondCard value to null.
+1. **Intended Outcome** - Have the home page have a level selector that then would like you click play instead of just automatically take you there.
+    * ***Issue Found:*** 
+        * For ease when doing the intial build of the project Isimply added links to the home board that would take you to the appropriate level. But I wanted this to be a choice and then for you to click play and it take you to the choice. This did not work depsite my many attempts. 
+    * ***Solution Used:*** 
+        * Turned the links instead into radio buttons and then styled them! Added some Javascript that mean that if a button with a certain id was clicked then the div with the id "play" would have it's inner HTML populated with an appropriate a href link and that could be clicked. I then styled this so they all looked like buttons and would react when the click occurs with CSS.
+   1. **Intended Outcome** - Create columns/ rows and have indexes where this will go.
+   * ***Issue Found:*** 
+        * This issue didn't turn up on screen as the board hadn't yet been populated with the cards nor had the cards really been built at this point Nor could we visually see the coloumns or rows at any point. However this error was caught in the console. If this hadn't have been solved then any addition underneath this error would have not work the way it was intended to.
+    * ***Solution Used:*** 
+        * It turned out just to be a typo on my part not using correct camelCase     
+ 1. **Intended Outcome** - To randomise the position of the cards on the board
+    * ***Issue Found:*** 
+        * The card set was not being randomised - caught this in the console. But this would have left the array and then therefore the board to just be a repetition of the array before it gets concatenated. 
+    * ***Solution Used:*** 
+        * A typo in Math.random and Math.floor, easily fixed. But this could've have made the card game really boring and repetative.
+ 1. **Intended Outcome** - Have the card images acutally appear
+    * ***Issue Found:*** 
+        * The cards weren't showing up at all despite the code looking like it should be pulling through at least something. Turns out the file path was wrong, I had just typed the name of the image instead of the correct way to pull the file through.
+    * ***Solution Used:*** 
+        * Fixed the file path from "poppy" to "/assets/css/images/poppy" for the JS to then add the .jpg to the end and then for this to pull through.
+ 1. **Intended Outcome** - Have the card images fix to the board in their coloumns and at the right size
+    * ***Issue Found:*** 
+        * Despite asigning the cards to a coloum and a row position [0 - 1]/[3 - 2] they weren't affixing properly to the baord and they were appearing either way over sized or spilling over.
+    * ***Solution Used:*** 
+        * The solution here was to actually use the .card class I had created and use it properly to assign the cards height and widths. Also to ensure that these heights and widths were apporpiate for the baord div - and chnage that when needed.
 
 ## **Post Development Testing**
 ### **Validators**
