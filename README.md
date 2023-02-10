@@ -341,17 +341,14 @@ Below is a list of bugs I found during the development process. A lot of the bug
 ### **Test conditions**
 * I performed the lighthouse tests in incognito mode. I ran the tests for both mobile and desktop.
 #### ***Desktop Version:***
-* 
-
+* Here is the Desktop Lighthouse score
 ![Lighthouse Desktop Score]() 
-* 
+
 #### ***Mobile Version:***
-* 
-* 
-
-![Lighthouse Mobile Best Score]() 
-
-![Lighthouse Mobile Worst Score]() 
+* Here is the Desktop Lighthouse score
+![Lighthouse Mobile  Score]() 
 
 ### **Accessability**
-In addition to other tests, I was also inspired to use [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/) by dnlbowers to check my pages for accessibility. no errors were returned - I was especially concerned with the contrast of my signup page but beforehand I had increased the font-weight and size, so this was mitigated.
+* The main accessibility issue with this site is that it is a visual memory game. Despite the constrast being high on purpose for the visuall imparied. The images pulled through by Javascript cannot have alt attributes due to the nature of how javascript pulls them through. This did cause an issue with the lighthouse scores. However, becuase of the nature of the game, this site would probably not be attended to by people with extra visual needs - and if there were some how did visit who were visually impaired rather than blind, the images used are high contrast enough for them to see differences, but not enough for the game to be easy (as some images were chosen for their colour similarity).
+* It is unfoutunate that I couldn't think of a way around this issue. In future I would tinker with this to create a work around and make this site fully accesible to the severly visually impared.
+* In addition to other tests, I was also inspired to use [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/) by dnlbowers to check my pages for accessibility. Some issueserrors were returned - I was especially concerned with the contrast of my nav button and this was flagged so I changed it and increased the font to mitigate this. It did also flag some issues that were purposeful, like the blue button and the nav button being empty - these are both empty on purpose and they are meant to be as such. These issues are also fixed by the user interaction.
