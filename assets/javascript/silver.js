@@ -7,10 +7,10 @@ let silverScore;
 
 //List of silver level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 const cardList = [
-    "../assets/images/elliot",
-    "../assets/images/haley",
-    "../assets/images/leah",
-    "../assets/images/alex",
+    "./assets/images/elliot",
+    "./assets/images/haley",
+    "./assets/images/leah",
+    "./assets/images/alex",
 ];
 
 //Variables for the Pairs, cards, rows & coloumns and board. The build of the game
@@ -81,7 +81,7 @@ function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             const card = document.getElementById(r.toString()+ "-" + c.toString());
-            card.src = "/assets/images/back.jpg";
+            card.src = "./assets/images/back.jpg";
         }
     }
 }    

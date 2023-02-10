@@ -6,16 +6,16 @@ let points = 0;
 
 //List of iridium Level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 let cardList = [
-    "../images/dustsprite",
-    "../images/frostslime",
-    "../images/ghost",
-    "../images/greenslime",
-    "../images/metalhead",
-    "../images/purpleslime",
-    "../images/redslime",
-    "../images/skeleton",
-    "../images/squidkid",
-    "../images/tigerslime"
+    "./assets/images/dustsprite",
+    "./assets//images/frostslime",
+    "./assets/images/ghost",
+    "./assets/images/greenslime",
+    "./assets/images/metalhead",
+    "./assets/images/purpleslime",
+    "./assets/images/redslime",
+    "./assets/images/skeleton",
+    "./assets/images/squidkid",
+    "./assets/images/tigerslime"
 ];
 
 //Variables for the Pairs, cards, rows & coloumns and board. The build of the game
@@ -86,7 +86,7 @@ function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             const card = document.getElementById(r.toString()+ "-" + c.toString());
-            card.src = "../assets/images/back.jpg";
+            card.src = "./assets/images/back.jpg";
         }
     }
 }    
