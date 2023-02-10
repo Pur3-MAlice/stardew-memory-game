@@ -4,6 +4,8 @@ let errors = 0;
 let matches = 0;
 let points = 0;
 let silverScore;
+const modal = document.querySelector(".modal");
+const closeButton = document.querySelector(".close-button");
 
 //List of silver level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 const cardList = [
@@ -122,6 +124,8 @@ function update() {
         document.getElementById("errorcount").innerText = errors;
         document.getElementById("pointcount").innerText = points;
     } else if (firstCard.src == secondCard.src) {
+        firstCard.classList.remove("shake");
+        secondCard.classList.remove("shake");
         matches += 1;
         points += 2;
         document.getElementById("matchcount").innerText = matches;
@@ -135,12 +139,10 @@ function update() {
 }
 
 function modalPopUp() {
-    const modal = document.querySelector(".modal");
-    const closeButton = document.querySelector(".close-button");
-    function toggleModal() {
-    modal.classList.toggle("show-modal");
-    }
     closeButton.addEventListener("click", toggleModal);
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
 }
 
 /**
