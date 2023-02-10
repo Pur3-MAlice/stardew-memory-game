@@ -147,14 +147,14 @@ function windowOnClick(event) {
     }
 }
 
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener(endGame, toggleModal);
+closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 /**
  * Function to alert the user at the end of the game, set highscore in local storage.
  */
 function endGame() {
     if (matches === cardList.length) {
+        toggleModal
      //Add score to local.storage and replace value if new score is > than old score.
         if (points > silverScore) {
             localStorage.setItem('silverScore', points);
