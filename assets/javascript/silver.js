@@ -4,8 +4,7 @@ let errors = 0;
 let matches = 0;
 let points = 0;
 let silverScore;
-const modal = document.querySelector(".modal");
-const closeButton = document.querySelector(".close-button");
+
 
 //List of silver level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 const cardList = [
@@ -138,7 +137,15 @@ function update() {
     setTimeout(modalPopUp, 300);
 }
 
+const modal = document.querySelector(".modal");
+
+
+
+
+
 function modalPopUp() {
+    document.getElementsByClassName('.modal').innerHTML = `<div class="modal-content"><span class="close-button">&times;</span><h1>You've found all the Cards! Refresh to play this level again</h1></div>`;
+    const closeButton = document.querySelector(".close-button");
     closeButton.addEventListener("click", toggleModal);
     function toggleModal() {
         modal.classList.toggle("show-modal");
