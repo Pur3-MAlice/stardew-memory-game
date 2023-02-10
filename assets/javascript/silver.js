@@ -71,7 +71,6 @@ function startGame() {
     }
     console.log(board);
     setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg. Time out inspired by Code with Ania Kubów
-      
 }
 
 /**
@@ -114,6 +113,8 @@ function selectCard() { // function here inspired by coding from Kenny Yip Codin
 function update() {
     // if the cards aren't a match then flip and adjust scores
     if (firstCard.src != secondCard.src) {
+        firstCard.classList.add("shake");
+        secondCard.classList.add("shake");
         firstCard.src ="./assets/images/back.jpg";
         secondCard.src ="./assets/images/back.jpg";
         errors += 1;

@@ -391,6 +391,29 @@ input:checked + label {
     cursor: pointer
 }
 
+.silvercard .shake {
+    animation: shake 0.2s ease-in-out;
+}
+
+@keyframes shake { /*styling taken from CSS Tricks*/
+    0%, 100% {
+        transform: translateX(-10px);
+      }
+      
+      40% {
+        transform: translateX(10px);
+      }
+    
+      60% {
+        transform: translateX(-6px);
+      }
+    
+      70% {
+        transform: translateX(6px);
+      }
+    
+}
+
 #errors, #matches, #points {
     background-color: #0E4A0E;
     display: inline-block;
