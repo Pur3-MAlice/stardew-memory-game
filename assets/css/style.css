@@ -395,21 +395,25 @@ input:checked + label {
     animation: shake 0.2s ease-in-out;
 }
 
-@keyframes shake { /*styling taken from CSS Tricks*/
+@keyframes shake { /*styling taken from Code Nepal*/
     0%, 100% {
-        transform: translateX(-10px);
+        transform: translateX(0px);
       }
       
-      40% {
-        transform: translateX(10px);
+      20% {
+        transform: translateX(-13px);
       }
-    
+
+      40% {
+        transform: translateX(13px);
+      }
+
       60% {
-        transform: translateX(-6px);
+        transform: translateX(-8px);
       }
     
       70% {
-        transform: translateX(6px);
+        transform: translateX(8px);
       }
     
 }
