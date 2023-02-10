@@ -10,10 +10,10 @@ const cardList = [
     "./assets/images/poppy",
     "./assets/images/strawberry",
     "./assets/images/parsnip",
-    "(../assets/images/grape)",
-    "(./assets/images/eggplant)",
-    "(/assets/images/amaranth)",
-    "(assets/images/coffee)"
+    "./assets/images/grape",
+    "./assets/images/eggplant",
+    "./assets/images/amaranth",
+    "./assets/images/coffee"
 ];
 
 //Variables for the Pairs, cards, rows & coloumns and board. The build of the game
@@ -85,7 +85,7 @@ function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             const card = document.getElementById(r.toString()+ "-" + c.toString()); 
-            card.src = "/assets/images/back.jpg";
+            card.src = "./assets/images/back.jpg";
         }
     }
 }    
