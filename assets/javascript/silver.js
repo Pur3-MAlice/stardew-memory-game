@@ -136,12 +136,25 @@ function update() {
 const modal = document.querySelector(".modal");
 const trigger = endGame;
 const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener(endGame, toggleModal);
+window.addEventListener("click", windowOnClick);
 /**
  * Function to alert the user at the end of the game, set highscore in local storage.
  */
 function endGame() {
     if (matches === cardList.length) {
-        alert (`You've found all the Cards! Your Score is ${points}. Refresh to play this level again`);
      //Add score to local.storage and replace value if new score is > than old score.
         if (points > silverScore) {
             localStorage.setItem('silverScore', points);
