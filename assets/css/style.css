@@ -1,7 +1,7 @@
 /* Universal Styling & Styling that Occurs on all pages*/
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+Syloti+Nagri&family=VT323&display=swap');
 body {
-    background: url(/assets/images/stardew-bg.jpg);
+    background: url(assets/images/stardew-bg.jpg);
     font-family: 'Noto Sans Syloti Nagri', sans-serif;
     color: #fff;
     text-align: center;

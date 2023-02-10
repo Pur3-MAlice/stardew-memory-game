@@ -6,14 +6,14 @@ let points = 0;
 
 //List of gold level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 const cardList = [
-    "/assets/images/pepper",
-    "/assets/images/poppy",
-    "/assets/images/strawberry",
-    "/assets/images/parsnip",
-    "/assets/images/grape",
-    "/assets/images/eggplant",
-    "/assets/images/amaranth",
-    "/assets/images/coffee"
+    "assets/images/pepper",
+    "assets/images/poppy",
+    "assets/images/strawberry",
+    "assets/images/parsnip",
+    "assets/images/grape",
+    "assets/images/eggplant",
+    "assets/images/amaranth",
+    "assets/images/coffee"
 ];
 
 //Variables for the Pairs, cards, rows & coloumns and board. The build of the game
