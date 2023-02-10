@@ -88,6 +88,17 @@ a {
     background-color: #508a50;
 }
 
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+
 /* Buttons some of the styling below inspired by a Codepen (referenced in README.md)*/
 #social-buttons, #social-buttons-text {
     display: inline-flex;
