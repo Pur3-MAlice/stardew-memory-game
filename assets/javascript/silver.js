@@ -131,21 +131,23 @@ function update() {
     firstCard = null; 
     secondCard = null; 
     setTimeout(endGame, 500);
+    setTimeout(modalPopUp, 300);
 }
 
-
+function modalPopUp() {
+    const modal = document.querySelector(".modal");
+    const closeButton = document.querySelector(".close-button");
+    function toggleModal() {
+    modal.classList.toggle("show-modal");
+    }
+    closeButton.addEventListener("click", toggleModal);
+}
 
 /**
  * Function to alert the user at the end of the game, set highscore in local storage.
  */
 function endGame() {
     if (matches === cardList.length) {
-        const modal = document.querySelector(".modal");
-        const closeButton = document.querySelector(".close-button");
-        function toggleModal() {
-            modal.classList.toggle("show-modal");
-        }
-        closeButton.addEventListener("click", toggleModal);
      //Add score to local.storage and replace value if new score is > than old score.
         if (points > silverScore) {
             localStorage.setItem('silverScore', points);

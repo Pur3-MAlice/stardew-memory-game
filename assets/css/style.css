@@ -355,6 +355,10 @@ input:checked + label {
     cursor: pointer
 }
 
+.iridiumcard.shake {
+    animation: shake 0.2s ease-in-out;
+}
+
 /* Gold Page Styling */
 #goldboard {
     height: 465px;
@@ -371,6 +375,10 @@ input:checked + label {
     margin: 3px;
     border-radius: 8px;
     cursor: pointer
+}
+
+.goldcard.shake {
+    animation: shake 0.2s ease-in-out;
 }
 
 /* Silver Page Styling */
