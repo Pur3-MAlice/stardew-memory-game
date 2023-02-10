@@ -110,6 +110,10 @@ function selectCard() {
             secondCard.src = board[r][c] + ".jpg";
             setTimeout(update, 1000); //if cards aren't a match then wait one second and call the update function
         }
+        let removeShakeOne = firstCard.classList.remove("shake");
+        let removeShakeTwo = secondCard.classList.remove("shake");
+        removeShakeOne;
+        removeShakeTwo;
     }
 }
 
@@ -119,6 +123,8 @@ function selectCard() {
 function update() {
     // if the cards aren't a match then flip and restart selectCards and adjust scores
     if (firstCard.src != secondCard.src) {
+        firstCard.classList.add("shake");
+        secondCard.classList.add("shake");
         firstCard.src ="./assets/images/back.jpg";
         secondCard.src ="./assets/images/back.jpg";
         errors += 1;

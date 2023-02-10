@@ -170,6 +170,8 @@ Stardew Valley Memory Game is a nostalgic card flipping/matching game based on t
 
         ![The Score Alert](/docs/screenshots/score-alert.jpg)
 
+    * The Shake. Cards not matched to a little animation of a shake.   
+
 ### **Gold Page Content**
 * The one feature that differs on the Gold Page is that the universal features (on all pages bar the home page) of the Left Button and Right Button go to the game play levels "above" and "below" it in difficulty respectively. So Next Level (Right Button) goes to Iridium and Previous Level (Left Button) goes to Silver.
 
@@ -199,7 +201,7 @@ Stardew Valley Memory Game is a nostalgic card flipping/matching game based on t
 * Add images to the level choice buttons for a bit of flair.
 * Add sounds effects for when you chose card, get a match, new high score, get a non-match, finish round, start game.
 * Update the Nav Bar to include a tab at the button of the list to take you back to the page you came from.
-* Add a small animation to the unmatched pairs - like a small, animated shake.
+* Add a timer.
 * Add how to play button to the home screen below the play button so this is easily accessible to the user and they don't have to actively look for it.
 * Make repetitive code such as the "document.getElementById("pointcount").innerText = points;" into a function for future proofing and cleaner better coding practices. 
 * Add another level: Bronze Level
@@ -246,6 +248,7 @@ During the development process, I was manually testing in the following ways:-
             1. Left button link on Gold & Iridium Page is "Previous Level" and takes you to the easier level. Right button on Iridium Page is "Play Again" and refreshes the page.
             1. There were no console errors throughout this testing.
 * Asked a Data Scientist friend to review the pages and the games responsiveness by following the above procedure often throughout the development of the game. They did not offer any help on the coding nor did they provide feedback other than "this link/button/card" is broken. They did however make a good soundboard for me to talk at while talking through difficult code issues. Below is the spreadsheet I used for user testing.
+* (new message: one "uncaught TypeError Cannot read properties of undefined (reading 'classList')". This does not affect the way the Javascript is working and it isn't a console error so to speak. But i did try to fix this, but nothing seemed to work. Very odd as the issue is classList - but this is a JavaScript function/word and not a variable.)
 ![Home Testing](/docs/screenshots/home-testing.jpg)
 ![Gameplay Testing](/docs/screenshots/gameplay-testing.jpg)
 ![About Stardew Testing](/docs/screenshots/aboutstardew-testing.jpg)

@@ -5,7 +5,6 @@ let matches = 0;
 let points = 0;
 let silverScore;
 
-
 //List of silver level cards cardlist inspired by Kenny Yip Coding and Code with Ania Kubów
 const cardList = [
     "./assets/images/elliot",
@@ -105,6 +104,10 @@ function selectCard() { // function here inspired by coding from Kenny Yip Codin
             secondCard.src = board[r][c] + ".jpg";
             setTimeout(update, 1000); //if cards aren't a match then wait one second and call the update function
         }
+        let removeShakeOne = firstCard.classList.remove("shake");
+        let removeShakeTwo = secondCard.classList.remove("shake");
+        removeShakeOne;
+        removeShakeTwo;
     }
 }
 
@@ -123,8 +126,6 @@ function update() {
         document.getElementById("errorcount").innerText = errors;
         document.getElementById("pointcount").innerText = points;
     } else if (firstCard.src == secondCard.src) {
-        firstCard.classList.remove("shake");
-        secondCard.classList.remove("shake");
         matches += 1;
         points += 2;
         document.getElementById("matchcount").innerText = matches;
@@ -134,18 +135,6 @@ function update() {
     firstCard = null; 
     secondCard = null; 
     setTimeout(endGame, 500);
-    setTimeout(modalPopUp, 300);
-}
-
-const modal = document.querySelector(".modal");
-
-function modalPopUp() {
-    document.getElementsByClassName('.modal').innerHTML = `<div class="modal-content"><span class="close-button">&times;</span><h1>You've found all the Cards! Refresh to play this level again</h1></div>`;
-    const closeButton = document.querySelector(".close-button");
-    closeButton.addEventListener("click", toggleModal);
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-    }
 }
 
 /**
@@ -153,6 +142,7 @@ function modalPopUp() {
  */
 function endGame() {
     if (matches === cardList.length) {
+        alert (`You've found all the Cards! You're score is ${points}. Refresh to play this level again`)
      //Add score to local.storage and replace value if new score is > than old score.
         if (points > silverScore) {
             localStorage.setItem('silverScore', points);
