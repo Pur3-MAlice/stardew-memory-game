@@ -139,10 +139,6 @@ function update() {
 
 const modal = document.querySelector(".modal");
 
-
-
-
-
 function modalPopUp() {
     document.getElementsByClassName('.modal').innerHTML = `<div class="modal-content"><span class="close-button">&times;</span><h1>You've found all the Cards! Refresh to play this level again</h1></div>`;
     const closeButton = document.querySelector(".close-button");
