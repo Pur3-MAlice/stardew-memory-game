@@ -47,9 +47,9 @@ a {
     text-align: center;
 }
 
-/* modal test */
+/* modal test css taken from https://sabe.io/tutorials/how-to-create-modal-popup-box*/
 
-.modal {
+.modal { 
     position: fixed;
     left: 0;
     top: 0;
@@ -391,7 +391,7 @@ input:checked + label {
     cursor: pointer
 }
 
-.silvercard .shake {
+.silvercard.shake {
     animation: shake 0.2s ease-in-out;
 }
 
