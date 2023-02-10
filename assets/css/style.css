@@ -30,7 +30,7 @@ a {
     border-radius: 4px;
 }
 
-#copyrightimg{
+#copyrightimg {
     width: 77px;
     position: fixed;
     bottom: 20px;
@@ -110,21 +110,21 @@ fieldset {
     margin: 0px 0px 0px 30px;
 }
 
-#social-buttons i:hover{
+#social-buttons i:hover {
     color: #000;
     cursor: pointer;
 }   
 
-#social-buttons-text i:hover{
+#social-buttons-text i:hover {
     color: #000;
     cursor: pointer;
 }  
 
-#social-buttons i{
+#social-buttons i {
     margin: 10px;
 }   
 
-#social-buttons-text i{
+#social-buttons-text i {
     margin: 10px;
 }  
 
@@ -651,7 +651,7 @@ input:checked + label {
         margin: 2.5rem 6rem 2.5rem 6rem;
     }
 
-    #play a{
+    #play a {
         margin-left: 35%;
     }
 

@@ -75,7 +75,6 @@ function startGame() {
     }
     console.log(board);
     setTimeout(hideCards, 500); //Player can see the cards for 500 milliseconds before the hideCards function is called and replaces the images with the back.jpg. Time out inspired by Code with Ania Kubów
-      
 }
 
 /**
