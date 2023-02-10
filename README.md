@@ -245,7 +245,11 @@ During the development process, I was manually testing in the following ways:-
             1. All extneral links in new tabs, all internal links work. All hover functions work as expected like above.
             1. Left button link on Gold & Iridium Page is "Previous Level" and takes you to the easier level. Right button on Iridium Page is "Play Again" and refreshes the page.
             1. There were no console errors throughout this testing.
-* Asked a Data Scientist friend to review the pages and the games responsiveness by following the above procedure often throughout the development of the game. They did not offer any help on the coding nor did they provide feedback other than "this link/button/card" is broken. They did however make a good soundboard for me to talk at while talking through difficult code issues.
+* Asked a Data Scientist friend to review the pages and the games responsiveness by following the above procedure often throughout the development of the game. They did not offer any help on the coding nor did they provide feedback other than "this link/button/card" is broken. They did however make a good soundboard for me to talk at while talking through difficult code issues. Below is the spreadsheet I used for user testing.
+![Home Testing](/docs/screenshots/home-testing.jpg)
+![Gameplay Testing](/docs/screenshots/gameplay-testing.jpg)
+![About Stardew Testing](/docs/screenshots/aboutstardew-testing.jpg)
+![How To Play Testing](/docs/screenshots/howto-testing.jpg)
 
 * During testing, I used three browsers to ensure cross-compatibility. The browsers used were:
   1. Chrome
