@@ -144,14 +144,7 @@ function endGame() {
         function toggleModal() {
             modal.classList.toggle("show-modal");
         }
-        function windowOnClick(event) {
-            if (event.target === modal) {
-                toggleModal();
-            }
-        }
         closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
-        toggleModal;
      //Add score to local.storage and replace value if new score is > than old score.
         if (points > silverScore) {
             localStorage.setItem('silverScore', points);
