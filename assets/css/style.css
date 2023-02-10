@@ -663,7 +663,7 @@ input:checked + label {
 
     #home-board {
         height: 300px;
-        width: 330px;
+        width: 80%;
     }
 
     label {
@@ -695,6 +695,15 @@ input:checked + label {
         width: 90%;;
     }
 
+    .button {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    #break a {
+        padding-top: 30px;
+    }
+
     .rightbutton {
         position: relative;
         display: inline-flex;
@@ -708,7 +717,35 @@ input:checked + label {
     }
 
     #errors, #matches, #points {
-        margin: 5px 12px 15px 12px;
+        margin: 8px 12px 15px 12px;
+    }
+
+    #iridiumboard {
+        height: 385px;
+        width: 340px;
+    }
+
+    .iridiumcard {
+        height: 90px;
+        width: 62px;
+    }
+
+    #about-board {
+        height: 884px;
+        width: 330px;
+    }
+
+    #howto-board {
+        height: 600px;
+        width: 330px;
+    }
+
+    #howto-board li{
+        font-size: 14px;
+    }
+
+    #mobilebutton-margin {
+        margin-top: 5px;
     }
 
 }
