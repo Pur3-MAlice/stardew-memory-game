@@ -359,6 +359,7 @@ input:checked + label {
     #social-buttons {
         font-size: 36px;
     }
+
     #errors, #matches, #points {
         margin: 0.5rem 7em 6px 7rem;
     }
@@ -443,6 +444,15 @@ input:checked + label {
     #score-board h2{
         font-size: 18px;
     }
+    #silverboard {
+        height: 355px;
+        width: 515px;
+    }
+
+    .silvercard {
+        height: 169px;
+        margin: 4px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -486,6 +496,23 @@ input:checked + label {
         margin: 10px 20% -10px 20%;
     }
 
+    .button {
+        width: 105px;
+        font-size: 13px;
+    }
+
+    .button a {
+        padding-top: 30px;
+    }
+
+    #break a {
+        padding-top: 23px;
+    }
+
+    #smallscreen-edits a {
+        padding-top: 23px;
+    }
+
     #play {
         margin: 2.5rem 4rem 2.5rem 4rem;
     }
@@ -493,4 +520,195 @@ input:checked + label {
     #play a{
         margin-left: 25%;
     }
+
+    #about-board {
+        height: 625px;
+        width: 480px;
+    }
+
+    #howto-board {
+        height: 580px;
+        width: 480px;
+    }
+
+    #disclaimer {
+        font-size: 12px;
+    }
+}    
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 26px;
+        margin: 8px
+    }
+
+    .dropbutton {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    #errors, #matches, #points {
+        margin: 5px 25px 10px 25px;
+    }
+
+    #home-board {
+        margin-top: 5px;
+        height: 360px;
+        width: 480px;
+    }
+
+    #score-board {
+        margin-top: 5px;
+        width: 91.5%;
+        position: inherit;
+    }
+
+    #score-board h2{
+        font-size: 14px;
+    }
+
+    #social-buttons {
+        font-size: 28px;
+        padding: 5px;
+        margin: 0px 0px 0px 15px;
+    }
+
+    label {
+        font-size: 16px;
+        padding: 8px;
+        margin: 10px 20% -10px 20%;
+    }
+    
+    .button {
+        width: 82px;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+
+    .button a {
+        padding-top: 30px;
+    }
+
+    #break a {
+        padding-top: 23px;
+    }
+
+    #smallscreen-edits a {
+        padding-top: 23px;
+    }
+
+    #play {
+        margin: 2.5rem 6rem 2.5rem 6rem;
+    }
+
+    #play a{
+        margin-left: 35%;
+    }
+
+    #about-board {
+        height: 625px;
+        width: 480px;
+    }
+
+    #howto-board {
+        height: 580px;
+        width: 480px;
+    }
+    .leftbutton {
+        left: 0.5%;
+    }
+    
+    .rightbutton {
+        right: 0.5%;
+    }
+    
+    .silvercard {
+        height: 110px;
+        margin: 3px;
+    }
+
+    #silverboard {
+        height: 236px;
+        width: 339px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 23px;
+        margin: 8px;
+    }
+
+    .dropbutton {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    #score-board {
+        margin-top: 5px;
+        width: 88.5%;
+        height: 100px;
+        position: inherit;
+    }
+
+    #levelchoice {
+        font-size: 20px;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+
+    #home-board {
+        height: 300px;
+        width: 330px;
+    }
+
+    label {
+        font-size: 16px;
+        padding: 8px;
+        margin: -12px 20% -10px 20%;
+    }
+    
+    #play {
+        margin: 2.5rem 4rem 2.5rem 4rem;
+    }
+
+    #copyrightimg {
+        width: 60px;
+        bottom: 15px;
+        right: 1px;
+    }
+
+    #social-buttons-text {
+        margin: 9px;
+        font-size: 30px;
+    }
+
+    #disclaimer {
+        font-size: 8px;
+    }
+
+    #highscore {
+        width: 90%;;
+    }
+
+    .rightbutton {
+        position: relative;
+        display: inline-flex;
+        margin: 5px 0 0 10px;
+    }
+
+    .leftbutton {
+        position: relative;
+        display: inline-flex;
+        margin-right: 5px 10px 0 0;
+    }
+
+    #errors, #matches, #points {
+        margin: 5px 12px 15px 12px;
+    }
+
 }
