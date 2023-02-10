@@ -119,8 +119,8 @@ function selectCard() {
 function update() {
     // if the cards aren't a match then flip and restart selectCards and adjust scores
     if (firstCard.src != secondCard.src) {
-        firstCard.src ="/assets/images/back.jpg";
-        secondCard.src ="/assets/images/back.jpg";
+        firstCard.src ="./assets/images/back.jpg";
+        secondCard.src ="./assets/images/back.jpg";
         errors += 1;
         points -= 1;
         document.getElementById("errorcount").innerText = errors;
