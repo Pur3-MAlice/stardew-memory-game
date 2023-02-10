@@ -132,6 +132,10 @@ function update() {
     setTimeout(endGame, 500);
 }
 
+
+const modal = document.querySelector(".modal");
+const trigger = endGame;
+const closeButton = document.querySelector(".close-button");
 /**
  * Function to alert the user at the end of the game, set highscore in local storage.
  */
